@@ -1,5 +1,5 @@
 import React from 'react';
-import imgPath from  './logo.svg'
+import imgPath from  '../images/logo.svg'
 import styles from '../styles/main.scss';
 
 var Header = React.createClass({
@@ -7,8 +7,7 @@ var Header = React.createClass({
     return(
       <header className={styles.header}>
         <div className={styles.main}>
-          <h1>logo</h1>
-          <img src={imgPath} />
+          <img src={imgPath} className={styles.header__logo} />
       </div>
     </header>
     )
