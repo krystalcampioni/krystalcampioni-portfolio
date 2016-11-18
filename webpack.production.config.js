@@ -6,6 +6,15 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
+var bourbon = require('node-bourbon').includePaths;
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+var sassNeatPaths = require("node-neat").with([
+    path.resolve(__dirname, "./app/assets/styles")
+  ]).map(function(neatPath) {
+    return "includePaths[]=" + neatPath;
+}).join("&");
+
 // local css modules
 loaders.push({
 	test: /[\/\\]src[\/\\].*\.css/,
@@ -17,7 +26,13 @@ loaders.push({
 loaders.push({
 	test: /[\/\\]src[\/\\].*\.scss/,
 	exclude: /(node_modules|bower_components|public)/,
-	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
+	// loaders: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
+  loaders: [
+		'style?sourceMap',
+		'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+		'postcss',
+		'sass?includePaths[]=' + bourbon + '&includePaths[]=' + sassNeatPaths
+	]
 });
 // global css files
 loaders.push({

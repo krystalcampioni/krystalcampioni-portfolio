@@ -4,7 +4,6 @@ var path = require('path');
 var loaders = require('./webpack.loaders');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var bourbon = require('node-bourbon').includePaths;
-// var neat = require('node-neat').includePaths;
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var sassNeatPaths = require("node-neat").with([

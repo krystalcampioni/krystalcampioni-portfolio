@@ -1,5 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './index.scss';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './styles/main.scss';
 import React from 'react';
 
 export default class App extends React.Component {
