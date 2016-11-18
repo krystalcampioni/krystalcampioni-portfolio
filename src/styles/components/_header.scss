@@ -1,14 +1,3 @@
-@import 'bourbon';
-@import 'neat';
-
-@import './base/variables';
-@import './base/structure';
-@import './base/animations';
-
-@import './components/header';
-@import './components/rocket';
-
-
 .header {
   background: rgba($purple, .8);
   position: relative;

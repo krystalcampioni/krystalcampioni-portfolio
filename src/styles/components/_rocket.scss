@@ -1,0 +1,332 @@
+.rocket {
+  @include size(400px 200px);
+  @include animation(float 3.8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95));
+  position: relative;
+  margin: 0 auto;
+  transform-origin: left;
+  z-index: 10;
+
+  &__wrapper {
+    @include linear-gradient(to top, darken($sky-blue, 15%), $sky-blue);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &__windows {
+    @include transform(rotate(90deg));
+    position: absolute;
+    list-style: none;
+    z-index: 60;
+    left: 169px;
+    top: 29px;
+
+    li {
+      @include size(17px);
+      background: $blue;
+      border-radius: 50%;
+      border: 4px solid $metal;
+      margin: 10px 0;
+      box-shadow: 0px -8px 15px -1px rgba($black, 0.8), inset 0px -4px 3px -1px rgba($black, 0.8);
+
+      &:first-child {
+       @include transform(scale(1.4) translateY(-10px));
+      }
+    }
+  }
+
+  &__body {
+    @include animation(reflection .8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95));
+    @include size(140px 50px);
+    background: $red;
+    border-radius: 50% 20px 20px 50%;
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    z-index: 20;
+    border-right: 5px solid darken($metal, 20%);
+    box-shadow: inset 52px 8px 60px -25px $yellow, inset 13px -6px 22px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  &__nose {
+    @include transform(scale(.9, .5));
+    @include size(100px 50px);
+    background: darken($metal, 5%);
+    border-radius: 10px 50% 50% 10px;
+    position: absolute;
+    top: 100px;
+    left: 210px;
+    z-index: 10;
+    box-shadow: inset -9px -2px 22px 2px rgba(black, 0.6);
+    z-index: 10;
+
+    &:after {
+      @include size(50px 5px);
+      content: '';
+      background: darken($metal, 40%);
+      position: absolute;
+      left: 98px;
+      top: 23px;
+      border-radius: 10% 50% 50% 10% ;
+    }
+
+    &:before {
+      @include transform(scale(1.1, 2));
+      @include size(100px 50px);
+      content: '';
+      background: darken($red, 5%);
+      border-radius: 10px 50% 50% 10px;
+      position: absolute;
+      top: 0px;
+      left: -20px;
+      z-index: 10;
+      box-shadow: inset -9px -2px 22px 2px rgba(black, 0.6);
+    }
+  }
+
+  &__frontFin {
+    list-style: none;
+
+    li {
+      border-width: 0px 190px 80px 0px;
+      top: 86px;
+      left: 10px;
+      z-index: 360;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent transparent darken($red, 5%) transparent;
+      position: absolute;
+
+      &:nth-of-type(1) {
+        @include transform(scale(0.3, 0.15) rotate(157deg));
+      }
+
+      &:nth-of-type(2) {
+        @include transform(scale(0.3, -0.15) rotate(157deg));
+      }
+    }
+  }
+
+  &__fins {
+
+    li {
+      list-style: none;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 30px 50px 0;
+      border-color: transparent transparent darken($red, 5%) transparent;
+      position: absolute;
+
+      &:nth-of-type(1) {
+        @include transform(scale(1.1) rotate(-20deg));
+        top: 70px;
+        left: 90px;
+        border-width: 0 40px 50px 5px;
+      }
+
+      &:nth-of-type(2) {
+        @include transform(scale(0.3) rotate(-115deg));
+        border-width: 0 30px 60px 10px;
+        top: 56px;
+        left: 60px;
+      }
+
+       &:nth-of-type(3) {
+        @include transform(scale(-1.1) rotate(60deg));
+        top: 115px;
+        left: 75px;
+        border-width: 0 40px 50px 5px;
+      }
+
+      &:nth-of-type(4) {
+        @include transform(scale(-0.3) rotate(115deg));
+        border-width: 0 30px 60px 10px;
+        top: 131px;
+        left: 60px;
+      }
+    }
+  }
+
+  &__jetsCover {
+    @include size(10px 30px);
+    background: darken($metal, 25%);
+    position: absolute;
+    left: 90px;
+    top: 110px;
+    z-index: 30;
+    border-radius: 50% 10%;
+
+    &::after {
+      @include size(10px 40px);
+      background: darken($metal, 15%);
+      position: absolute;
+      left: -5px;
+      top: -5px;
+      z-index: 20;
+      border-radius: 50% 10%;
+      content: '';
+    }
+
+    &::before {
+      @include size(10px 50px);
+      background: darken($metal, 1%);
+      position: absolute;
+      left: -11px;
+      top: -10px;
+      z-index: 20;
+      border-radius: 50% 10%;
+      content: '';
+    }
+  }
+
+  &__jets {
+    top: 75px;
+    left: 58px;
+    position: absolute;
+    z-index: 20;
+    border-radius: 50%;
+
+    li {
+      @include animation(fire 1.8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95));
+      @include size(20px 10px);
+      background: $metal;
+      box-shadow: inset 8px 2px 3px 0px $yellow, inset 4px 2px 3px 0px $yellow, -14px 1px 39px 5px adjust-hue(darken($yellow, 1%), -20), -14px 1px 47px -3px adjust-hue(darken($yellow, 1%), -20);
+      list-style: none;
+      position: absolute;
+      left: 12px;
+      border-radius: 50%;
+
+      &:nth-of-type(2){
+        left: 4px;
+      }
+
+      @for $i from 1 through 3 {
+        $counter: 15*$i;
+        &:nth-of-type(#{$i}){
+        top: #{$counter}px;
+        }
+      }
+
+    }
+  }
+}
+
+// flames
+
+.flames {
+  top: 147px;
+  left: 14px;
+  position: absolute;
+  transform-origin:center bottom;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @for $i from 1 through 4 {
+    $counter: 1*$i;
+    li:nth-of-type(#{$i}){
+    @include animation-delay(#{-$counter}s);
+    @include animation-duration(#{$counter * .1}s);
+    }
+  }
+
+  li {
+    @include animation-name(flicker);
+    @include animation-direction(alternate);
+    @include animation-iteration-count(infinite);
+    @include transform(rotate(-135deg) scale(1.2,1.2));
+    border-radius: 50% 0;
+    position: absolute;
+    opacity: .8;
+  }
+
+  &__yellow {
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: adjust-hue(darken($yellow, 2%), -10);
+    box-shadow: 0px 0px 9px 4px adjust-hue(darken($yellow, 2%), -10);
+    top: -40px;
+  }
+
+  &__orange {
+    left: -9px;
+    width: 40px;
+    height: 40px;
+    background: adjust-hue(darken($yellow, 1%), -20);
+    box-shadow: 0px 0px 9px 4px adjust-hue(darken($yellow, 1%), -20);
+    top: -43px;
+  }
+
+  &__red {
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    background: adjust-hue($yellow, -45);
+    box-shadow: 0px 0px 5px 4px adjust-hue($yellow, -45);
+    top: -48px;
+
+    &:after {
+      @include animation(flicker .2s infinite ease);
+      width: 14px;
+      height: 14px;
+      background:  adjust-hue($yellow, -45);
+      box-shadow: 0px 0px 5px 4px  adjust-hue($yellow, -45);
+      top: 51px;
+      content: "";
+      display: block;
+      border-radius: 50% 0;
+      position: absolute;
+      left: -30px;
+      opacity: 0.2;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__white {
+    left: 30px;
+    bottom: 8px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px white;
+  }
+}
+
+.stars {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  @for $i from 1 through 200 {
+    $counter: 50*$i;
+    li:nth-of-type(#{$i}){
+    @include animation-delay(#{-$counter}s);
+    @include animation-duration(#{$counter * .02}s);
+    top: random(600) + px;
+    left: random(1400) + px;
+    }
+  }
+
+  li {
+    @include animation-name(stars);
+    @include animation-direction(normal);
+    @include animation-iteration-count(infinite);
+    @include transform(rotate(-135deg) scale(1.2,1.2));
+    @include size(10px);
+    @include transition-timing-function(linear);
+    height: 2px;
+    width: 2px;
+    background: $white;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px white;
+    left: 10px;
+    top: 10px;
+    z-index: 0;
+  }
+}
