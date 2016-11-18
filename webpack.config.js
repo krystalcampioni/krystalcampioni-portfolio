@@ -4,6 +4,14 @@ var path = require('path');
 var loaders = require('./webpack.loaders');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var bourbon = require('node-bourbon').includePaths;
+// var neat = require('node-neat').includePaths;
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+var sassNeatPaths = require("node-neat").with([
+    path.resolve(__dirname, "./app/assets/styles")
+  ]).map(function(neatPath) {
+    return "includePaths[]=" + neatPath;
+}).join("&");
 
 const HOST = process.env.HOST || "127.0.0.1";
 const PORT = process.env.PORT || "8888";
@@ -26,9 +34,10 @@ loaders.push(
 		'style?sourceMap',
 		'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
 		'postcss',
-		'sass?includePaths[]=' + bourbon
+		'sass?includePaths[]=' + bourbon + '&includePaths[]=' + sassNeatPaths
 	]
-});
+}
+);
 
 // local css modules
 loaders.push({
@@ -70,6 +79,7 @@ module.exports = {
 		host: HOST
 	},
 	plugins: [
+    new ExtractTextPlugin("[name].css"),
 		new webpack.NoErrorsPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
