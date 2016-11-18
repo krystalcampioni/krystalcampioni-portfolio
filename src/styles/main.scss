@@ -1,28 +1,17 @@
 @import 'bourbon';
 @import 'neat';
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+
 @import './base/variables';
 @import './base/structure';
 @import './base/animations';
 
 @import './components/header';
 @import './components/rocket';
+@import './components/chat';
 
 
-.header {
-  background: rgba($purple, .8);
-  position: relative;
-  height: 60px;
-
-  &::after {
-    @include linear-gradient($pink, $light-purple);
-    bottom: 0;
-    color: transparent;
-    content: '';
-    height: 1px;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-  }
+.main {
+  @include outer-container;
 }

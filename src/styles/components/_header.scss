@@ -1,7 +1,7 @@
 .header {
   background: rgba($purple, .8);
   position: relative;
-  height: 60px;
+  padding: 10px 0;
 
   &::after {
     @include linear-gradient($pink, $light-purple);
@@ -14,4 +14,7 @@
     position: absolute;
     width: 100%;
   }
+
+  &__logo { margin-top: 10px 0; }
+
 }

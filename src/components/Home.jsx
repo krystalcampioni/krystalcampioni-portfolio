@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from '../styles/main.scss';
+import ChatBubble from './ChatBubble'
 
 var Home = React.createClass({
   render: function(){
     return(
       <div className={styles.rocket__wrapper}>
+        <ChatBubble />
         <div className={styles.rocket}>
           <ul className={styles.rocket__windows}>
             <li></li>
