@@ -1,4 +1,7 @@
+@import 'bourbon';
+
 .redBg {
+  @include linear-gradient(#1e5799, #2989d8);
     background-color: red;
     border-radius: 5px;
     color: white;
