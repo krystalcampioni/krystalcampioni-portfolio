@@ -1,12 +1,10 @@
-import styles from './styles/main.scss';
 import React from 'react';
-import Header from './components/header'
+import styles from '../styles/main.scss';
 
 var Home = React.createClass({
   render: function(){
     return(
       <div className={styles.rocket__wrapper}>
-        <Header />
         <div className={styles.rocket}>
           <ul className={styles.rocket__windows}>
             <li></li>
