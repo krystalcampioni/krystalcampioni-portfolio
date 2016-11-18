@@ -1,0 +1,11 @@
+.menu {
+  float: right;
+  margin-top: 10px;
+
+  &__item {
+    display: inline-block;
+    color: $white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+}
