@@ -15,4 +15,9 @@
 
 .main {
   @include outer-container;
+
+  &__internal {
+    @include outer-container;
+    margin-top: 100px;
+  }
 }

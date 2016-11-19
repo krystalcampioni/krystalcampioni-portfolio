@@ -1,7 +1,10 @@
 .header {
-  background: rgba($purple, .8);
-  position: relative;
-  padding: 10px 0;
+  background: rgba($purple, .5);
+  height: 70px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   &::after {
     @include linear-gradient($pink, $light-purple);

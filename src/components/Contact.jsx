@@ -2,14 +2,14 @@ import React from 'react';
 import imgPath from  '../images/krystal.png'
 import styles from '../styles/main.scss';
 
-var Portfolio = React.createClass({
+var Contact = React.createClass({
   render: function(){
     return(
     <div className={styles.main__internal}>
-      <h2>Portfolio</h2>
+      <h2>Contact</h2>
     </div>
     )
   }
 });
 
-module.exports = Portfolio;
+module.exports = Contact;
