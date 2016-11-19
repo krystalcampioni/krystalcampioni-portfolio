@@ -1,0 +1,23 @@
+.header {
+  background: rgba($purple, .5);
+  height: 70px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &::after {
+    @include linear-gradient($pink, $light-purple);
+    bottom: 0;
+    color: transparent;
+    content: '';
+    height: 1px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__logo { margin-top: 10px 0; }
+
+}

@@ -1,0 +1,13 @@
+.menu {
+  float: right;
+  margin-top: 10px;
+
+  &__item {
+    display: inline-block;
+    color: $white;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    margin-top: 8px;
+  }
+}

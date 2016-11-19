@@ -1,0 +1,24 @@
+.chat {
+  &__wrapper {
+    display: block;
+    float: left;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: relative;
+    width: 250px;
+    z-index: 20;
+  }
+
+  &__text {
+    background: url('../images/chatbubble.svg') no-repeat scroll left bottom;
+    color: white;
+    font-size: 25px;
+    height: 135px;
+
+    span {
+      float: left;
+      width: 100%;
+      font-weight: lighter;
+    }
+  }
+}

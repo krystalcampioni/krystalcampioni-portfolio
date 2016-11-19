@@ -1,13 +1,23 @@
 @import 'bourbon';
 @import 'neat';
 
-@import './base/variables';
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
 
-.redBg {
-    @include span-columns(6);
-    @include linear-gradient($red, #2989d8);
-    background-color: $red;
-    border-radius: 5px;
-    color: white;
-    padding: 5px;
+@import './base/variables';
+@import './base/structure';
+@import './base/animations';
+
+@import './components/header';
+@import './components/rocket';
+@import './components/chat';
+@import './components/menu';
+
+
+.main {
+  @include outer-container;
+
+  &__internal {
+    @include outer-container;
+    margin-top: 100px;
+  }
 }
