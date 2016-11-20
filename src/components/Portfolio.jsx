@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/main.scss';
 import axios from 'axios';
 import FlipMove from 'react-flip-move';
+import { Link, IndexLink } from 'react-router';
 import _ from 'lodash';
 
 var Portfolio = React.createClass({
@@ -29,10 +30,6 @@ var Portfolio = React.createClass({
        })
   },
 
-  componentWillUnmount: function() {
-    this.serverRequest.abort();
-  },
-
   filterBy: function(){
     this.setState({
       projects: _.filter(this.state.projects, ['category', 'Frontend'])
@@ -49,6 +46,7 @@ var Portfolio = React.createClass({
     var projectCards = this.state.projects.map(function(result, index) {
       return (
         <div key={result.link}>
+          <Link to={`projects/${result.link}`}>Link</Link>
           <h1>{result.name}</h1>
         </div>
       );
@@ -59,7 +57,7 @@ var Portfolio = React.createClass({
       <h2>Portfolio</h2>
         <button onClick={this.showAll}> All </button>
         <button onClick={this.filterBy}>Frontend</button>
-        <FlipMove easing="cubic-bezier(0, 0.7, 0.8, 0.1)">
+        <FlipMove easing="ease-in-out">
           {projectCards}
          </FlipMove>
     </div>

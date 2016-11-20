@@ -5,6 +5,7 @@ import App from './app.jsx';
 import Home from './components/Home.jsx';
 import Header from './components/Header.jsx';
 import Portfolio from './components/Portfolio.jsx';
+import Project from './components/Project.jsx';
 import Contact from './components/Contact.jsx';
 import './styles/main.scss';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
@@ -14,6 +15,7 @@ render(
     <Route path="/" component={Header}>
       <Route path="/portfolio" component={Portfolio}/>
       <Route path="/contact" component={Contact}/>
+      <Route path="/projects/:project" component={Project}/>
       <IndexRoute component={Home} />
     </Route>
   </Router>,
