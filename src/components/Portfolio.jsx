@@ -20,7 +20,6 @@ var Portfolio = React.createClass({
      axios
        .get("./data.json")
        .then(function(result) {
-         console.log(result.data.projects);
          self.setState({
            projects: result.data.projects,
            allProjects: result.data.projects
@@ -44,7 +43,7 @@ var Portfolio = React.createClass({
   },
 
   render: function(){
-    var projectCards = this.state.projects.map(function(project, index) {
+    const projectCards = this.state.projects.map(function(project, index) {
       return (
         <Link to={`projects/${project.link}`} key={project.link} className={styles.portfolio__item}>
         <ProjectCard
@@ -65,7 +64,7 @@ var Portfolio = React.createClass({
         <button className={styles.button__filter} onClick={() => this.filterBy('Design')}>Design</button>
         <FlipMove easing="ease-in-out">
           {projectCards}
-         </FlipMove>
+        </FlipMove>
     </div>
     )
   }

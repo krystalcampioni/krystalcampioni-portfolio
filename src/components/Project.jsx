@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/main.scss';
 import axios from 'axios';
 import _ from 'lodash';
+import { Link } from 'react-router'
 
 var Project = React.createClass({
   getInitialState: function() {
@@ -32,6 +33,7 @@ var Project = React.createClass({
     <div className={styles.main__internal}>
       <h2>{this.state.currentProject[0].name}</h2>
       <p>{this.state.currentProject[0].description}</p>
+      <Link to="/portfolio" className={styles.project__backLink}>Back to portfolio</Link>
     </div>
     )
   }
