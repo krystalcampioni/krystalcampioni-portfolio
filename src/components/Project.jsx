@@ -6,7 +6,8 @@ import _ from 'lodash';
 var Project = React.createClass({
   getInitialState: function() {
     return {
-      currentProject: this.props.params,
+      projects: [],
+      currentProject: this.props.params.project,
     }
   },
 
@@ -17,7 +18,7 @@ var Project = React.createClass({
        .get("./data.json")
        .then(function(result) {
          self.setState({
-           projects: result.data.projects
+           currentProject:  _.filter(result.data.projects, ['link', self.props.params.project])
          });
        })
        .catch(function (error) {
@@ -26,10 +27,11 @@ var Project = React.createClass({
   },
 
   render: function(){
-
+    console.log(this.state.currentProject[0].name)
     return(
     <div className={styles.main__internal}>
-      <h2>Project</h2>
+      <h2>{this.state.currentProject[0].name}</h2>
+      <p>{this.state.currentProject[0].description}</p>
     </div>
     )
   }
