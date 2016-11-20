@@ -43,12 +43,20 @@ var Portfolio = React.createClass({
   },
 
   render: function(){
-    var projectCards = this.state.projects.map(function(result, index) {
+    var projectCards = this.state.projects.map(function(project, index) {
       return (
-        <div key={result.link}>
-          <Link to={`projects/${result.link}`}>Link</Link>
-          <h1>{result.name}</h1>
-        </div>
+        <Link to={`projects/${project.link}`} key={project.link} className={styles.portfolio__item}>
+        <div className={styles.portfolio__imageWrapper}>
+          <img src={`images/${project.thumb}`} className={styles.image} />
+          <div className={styles.portfolio__description}>
+             <div className={styles.portfolio__name}>{project.name}</div>
+             <ul className={styles.category__list}>
+              <li className={styles.category__list__item}>{project.category}</li>
+             </ul>
+             <div className="button button--secondary">read more</div>
+           </div>
+         </div>
+         </Link>
       );
     });
 

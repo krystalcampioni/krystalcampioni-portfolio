@@ -1,0 +1,89 @@
+.portfolio {
+  margin: 0;
+  padding: 0;
+
+  &__name {
+    display: block;
+    font-size: rem(20);
+    margin-bottom: rem(10);
+  }
+
+  &__item {
+    @include omega();
+    list-style: none;
+    min-height: 190px;
+    padding: rem(10);
+    display: inline-block;
+
+    @include media($large-screen-up) {
+      @include span-columns(3.9 of 12);
+    }
+
+    @include media($tablet) {
+      @include span-columns(4 of 8);
+      margin: 0;
+    }
+
+    @include media($mobile) {
+      @include span-columns(8 of 8);
+    }
+  }
+
+  &__imageWrapper {
+    @include background-image(linear-gradient(to right, rgba(#158DC6, 1), rgba(#B4EC51, 1)));
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  	margin-bottom: 20px;
+
+    &:hover .image{
+    	@include transition(all .5s ease-in-out);
+      @include filter(blur(5px));
+    }
+
+    &:hover .portfolio__description {
+    	bottom: 0px;
+    	height: 170px;
+    	@include transition(all .5s ease-in-out);
+    }
+
+    .image {
+      @include transform-origin(right top);
+    	@include transition(all .5s ease-in-out);
+    	top: 0px;
+    	width: auto;
+      display: block;
+      height: 110%;
+    }
+
+
+    .portfolio__description {
+    	@include transition(all .5s ease-in-out);
+      @include background-image(linear-gradient(to right, rgba(#158DC6, .85), rgba(#B4EC51, .85)));
+    	height: 170px;
+      bottom: -170px;
+      color: #ffffff;
+      left: 0px;
+      padding: rem(30);
+      position: absolute;
+      right: 0px;
+      text-align: center;
+      text-decoration: none;
+
+    	h4 { margin-bottom: 30px; }
+
+    	i {
+    		background: darken($maincolor, 10%);
+    	    border-radius: 250px;
+    	    font-size: 19px;
+    	    height: 38px;
+    	    padding: 11px;
+    	    width: 38px;
+    		margin: 10px;
+    	}
+
+    }
+  }
+
+}

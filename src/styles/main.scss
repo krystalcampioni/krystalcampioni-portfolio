@@ -6,11 +6,13 @@
 @import './base/variables';
 @import './base/structure';
 @import './base/animations';
+@import './base/grid-settings';
 
 @import './components/header';
 @import './components/rocket';
 @import './components/chat';
 @import './components/menu';
+@import './components/portfolio';
 
 
 .main {
@@ -19,5 +21,7 @@
   &__internal {
     @include outer-container;
     margin-top: 100px;
+    z-index: 10;
+    position: relative;
   }
 }
