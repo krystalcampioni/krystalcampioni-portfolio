@@ -4,6 +4,7 @@ import axios from 'axios';
 import FlipMove from 'react-flip-move';
 import { Link, IndexLink } from 'react-router';
 import _ from 'lodash';
+import ProjectCard from './ProjectCard'
 
 var Portfolio = React.createClass({
   getInitialState: function() {
@@ -46,16 +47,11 @@ var Portfolio = React.createClass({
     var projectCards = this.state.projects.map(function(project, index) {
       return (
         <Link to={`projects/${project.link}`} key={project.link} className={styles.portfolio__item}>
-        <div className={styles.portfolio__imageWrapper}>
-          <img src={`images/${project.thumb}`} className={styles.image} />
-          <div className={styles.portfolio__description}>
-             <div className={styles.portfolio__name}>{project.name}</div>
-             <ul className={styles.category__list}>
-              <li className={styles.category__list__item}>{project.category}</li>
-             </ul>
-             <div className={styles.button}>read more</div>
-           </div>
-         </div>
+        <ProjectCard
+          name={project.name}
+          thumb={project.thumb}
+          category={project.category}
+          />
          </Link>
       );
     });
