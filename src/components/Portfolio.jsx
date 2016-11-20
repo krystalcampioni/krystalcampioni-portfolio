@@ -30,9 +30,9 @@ var Portfolio = React.createClass({
        })
   },
 
-  filterBy: function(){
+  filterBy: function(val){
     this.setState({
-      projects: _.filter(this.state.projects, ['category', 'Frontend'])
+      projects: _.filter(this.state.projects, ['category', val])
     });
   },
 
@@ -53,7 +53,7 @@ var Portfolio = React.createClass({
              <ul className={styles.category__list}>
               <li className={styles.category__list__item}>{project.category}</li>
              </ul>
-             <div className="button button--secondary">read more</div>
+             <div className={styles.button}>read more</div>
            </div>
          </div>
          </Link>
@@ -64,7 +64,7 @@ var Portfolio = React.createClass({
     <div className={styles.main__internal}>
       <h2>Portfolio</h2>
         <button onClick={this.showAll}> All </button>
-        <button onClick={this.filterBy}>Frontend</button>
+        <button onClick={() => this.filterBy('Frontend')}>Frontend</button>
         <FlipMove easing="ease-in-out">
           {projectCards}
          </FlipMove>
