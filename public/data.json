@@ -1,7 +1,7 @@
 {
 	"projects": [{
 		"name": "Monster Crusher",
-		"category": ["Games", "Illustration", "Design"],
+		"category": "Frontend",
 		"link": "#monster",
 		"description": "Interface design and illustration for the game Monster Crusher, launched by Gamma Play studio in Europe. The game currently has more than 50,000 downloads and 4.4 (out of 5) stars in Google Play.",
 		"thumb": "monster_thumb.gif",
