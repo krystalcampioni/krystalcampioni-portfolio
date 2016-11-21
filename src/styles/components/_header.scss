@@ -1,5 +1,6 @@
 .header {
-  background: rgba($purple, .5);
+  @include linear-gradient(-19deg, rgba(254, 1, 240, 0.3), rgba(27, 36, 97, 0.7));
+  background-color: rgba($black, .6);
   height: 70px;
   padding: 10px;
   position: fixed;

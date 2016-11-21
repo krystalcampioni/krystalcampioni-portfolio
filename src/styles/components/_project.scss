@@ -16,8 +16,15 @@
   }
 
   &__description {
-    @include omega();
-    @include span-columns(4 of 12);
+    @include span-columns(3 of 12);
+
+    @include media($tablet) {
+      @include span-columns(12 of 12);
+    }
+
+    @include media($medium-screen-up) {
+      position: fixed;
+    }
   }
 
   &__gallery {
@@ -25,6 +32,14 @@
     @include span-columns(8 of 12);
 
     img { width: 100%; }
+
+    @include media($tablet) {
+      @include span-columns(12 of 12);
+    }
+
+    @include media($medium-screen-up) {
+      @include shift(4);
+    }
   }
 
   &__image {

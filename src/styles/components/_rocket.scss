@@ -1,6 +1,6 @@
 .rocket {
   @include size(400px 200px);
-  @include animation(float 3.8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95));
+  @include animation(float 11.8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95));
   transform-origin: center;
   z-index: 1;
   top: 19vh;
