@@ -40,7 +40,7 @@
 		"description": "Helper is an IOs app that allows the user to find the best Instagram Hashtags near him. In this project, I was responsible for creating the visual identity of the brand and designing an application that would be easy to understand and use.",
 		"link": "hashtag",
 		"thumb": "images/projects/hashtag_thumb.jpg",
-		"gallery": ["images/projects/hashtag1.jpg", "images/projects/hashtag2.jpg", "", "", ""],
+		"gallery": ["images/projects/hashtag1.jpg", "images/projects/hashtag2.jpg"],
 		"external_link": "http://appsto.re/br/EJXZ5.i",
 		"external_cta": "Download on App Store",
 		"year": "2015"
@@ -50,7 +50,7 @@
 		"description": "Architectural visualization created in 3Ds Max, rendered using Vray",
 		"link": "villa",
 		"thumb": "images/projects/villa_thumb.jpg",
-		"gallery": ["images/projects/villa_wire.jpg", "images/projects/villa.jpg", "", "", ""],
+		"gallery": ["images/projects/villa_wire.jpg", "images/projects/villa.jpg"],
 		"year": "2015"
 	}, {
 		"name": "ESPN FC",
@@ -58,7 +58,7 @@
 		"description": "In 2013, ESPN decided to launch its soccer exclusive website - ESPN FC - in Brazil.In this project, my goal was to design a website that would work well, in spite of the huge amount of content being displayed, regardless of which screen size. The website would also have to adapt its layout in a flexible way to match the visual identity of every one of its 43 soccer teams.  Each team had its own page and color scheme.",
 		"link": "espn",
 		"thumb": "images/projects/espn_thumb.jpg",
-		"gallery": ["images/projects/espn1.jpg", "images/projects/espn2.jpg", "", "", ""],
+		"gallery": ["images/projects/espn1.jpg", "images/projects/espn2.jpg"],
 		"external_link": "http://www.espnfc.com.br",
 		"external_cta": "Visit the website",
 
@@ -66,10 +66,10 @@
 	}, {
 		"name": "StartupBase",
 		"category": "Frontend",
-		"description": "StartupBase is the largest startup database Brazil and aims to map the ecosystem of Brazilian startups, connecting entrepreneurs, mentors, investors, accelerators and incubators. Currently their database has more than 20,000 profiles of people and businesses. I was responsible for designing and implementing the Interface of the website",
+		"description": "StartupBase is the largest brazilian startup database and aims to map the ecosystem of Brazilian startups, connecting entrepreneurs, mentors, investors, accelerators and incubators. Currently their database has more than 20,000 profiles of people and businesses. I was responsible for designing and implementing the Interface of the website",
 		"link": "startupbase",
 		"thumb": "images/projects/startupbase_thumb.jpg",
-		"gallery": ["images/projects/startupbase.jpg", "", "", "", ""],
+		"gallery": ["images/projects/startupbase.jpg"],
 		"external_link": "http://www.abstartups.com.br/startupbase",
 		"year": "2015"
 	}, {
@@ -78,7 +78,7 @@
 		"description": "It was a big challenge when HE:Labs asked me to think about a way to explain their methodology of work to clients. The company works with agile development and they sell work hours instead of the traditional waterfall development method. Using gamification I managed to explain how the week of development works, making it easier for the client to see what the team does every day of the week to assure the delivery of a usable system on friday.",
 		"link": "magic",
 		"thumb": "images/projects/magic_thumb.jpg",
-		"gallery": ["images/projects/magica1.jpg", "images/projects/magica2.jpg", "images/projects/magica3.jpg", "", ""],
+		"gallery": ["images/projects/magic1.jpg", "images/projects/magic2.jpg", "images/projects/magic3.jpg"],
 		"year": "2013"
 	}, {
 		"name": "Boleto Simples",
@@ -86,8 +86,7 @@
 		"description": "Boleto Simples is an online plataform that automates the process of collecting payments, using bank slip and has perks that no bank has. For the project, I created the visual identity and the layout for the responsive website.",
 		"link": "boletosimples",
 		"thumb": "images/projects/boleto_thumb.jpg",
-		"gallery": ["images/projects/boleto1.jpg", "images/projects/boleto2.jpg", "images/projects/boleto3.jpg", "", ""],
-
+		"gallery": ["images/projects/boleto1.jpg", "images/projects/boleto2.jpg", "images/projects/boleto3.jpg"],
 		"external_link": "http://www.boletosimples.com.br",
 		"external_cta": "Visit the website",
 		"year": "2015"
@@ -97,26 +96,25 @@
 		"description": "In 2011 I had the chance to create a new concept to all the product catalogs and stationary items of Mirage. Also, I photographed the products on studio and edited the images.",
 		"link": "mirage",
 		"thumb": "images/projects/mirage_thumb.jpg",
-		"gallery": ["images/projects/mirage21.jpg", "images/projects/mirage11.jpg", "", "", ""],
-		"year": 2011
+		"gallery": ["images/projects/mirage1.jpg", "images/projects/mirage2.jpg"],
+		"year": "2011"
 	}, {
 		"name": "Dr. Colombaretti",
 		"category": "Design",
 		"description": "Dr. Alexandre Colombaretti is a renowned plastic surgeon in Rio de Janeiro. He wanted a logo that could express the femininity and sophistication of his work. In this solo project, I was responsible for creating the brand as well as other stationery items.",
 		"link": "colombaretti",
 		"thumb": "images/projects/alexandre_thumb.jpg",
-		"gallery": ["images/projects/alexandre1.jpg", "images/projects/alexandre2.jpg", "", "", ""],
+		"gallery": ["images/projects/alexandre1.jpg", "images/projects/alexandre2.jpg"],
 		"external_link": "",
 		"year": "2013"
 	}, {
 		"name": "Hammerhead Shark",
 		"category": "Games",
 		"description": "Hammerhead Shark 3D model created in 3D Coat and Maya. Rendered in Marmoset Viewer",
-
 		"iframe": "https://www.artstation.com/embed/886170",
 		"link": "shark",
 		"thumb": "images/projects/shark_thumb.jpg",
-		"gallery": ["images/projects/shark_model.jpg", "", "", "", ""],
+		"gallery": ["images/projects/shark_model.jpg"],
 		"external_link": "",
 		"year": "2015"
 	}, {
@@ -125,7 +123,7 @@
 		"description": "When I was part of the tem of MJV, we were always trying to find ways to make the work flow easier and funnier. As part of the gamification of our work strategy, I drew each member of the team as a soccer player.",
 		"link": "mjv",
 		"thumb": "images/projects/mjv_team_thumb.jpg",
-		"gallery": ["images/projects/mjv_team.jpg", "", "", "", ""],
+		"gallery": ["images/projects/mjv_team.jpg"],
 		"external_link": "",
 		"year": "2013"
 	}, {
@@ -134,7 +132,7 @@
 		"description": "NOVA is an NGO that works alerting teens about the consequences of alcohol abuse. On this project I was responsible for the logo creation, the visual identity and the design of stationary items and uniforms.",
 		"link": "namedida",
 		"thumb": "images/projects/namedida_thumb.jpg",
-		"gallery": ["images/projects/namedida.jpg", "images/projects/namedida2.jpg", "", "", ""],
+		"gallery": ["images/projects/namedida1.jpg", "images/projects/namedida2.jpg"],
 		"external_link": "",
 		"year": "2015"
 	}, {
@@ -143,8 +141,7 @@
 		"description": "EarlyShares was one of the first american crowdfundind platform to allow users to invest in equity projects. This project was developed with HE:Labs team and i was responsible for proposing a new visual identity and implementing the front-end with HAML and SASS.",
 		"link": "earlyshares",
 		"thumb": "images/projects/earlyshares_thumb.jpg",
-		"gallery": ["images/projects/earlyshares1.jpg", "images/projects/earlyshares21.jpg", "", "", ""],
-
+		"gallery": ["images/projects/earlyshares1.jpg", "images/projects/earlyshares2.jpg"],
 		"external_link": "https://www.earlyshares.com/",
 		"external_cta": "Visit the Website",
 		"year": "2015"
@@ -154,7 +151,7 @@
 		"description": "The Open Compass is a social network for wanderlusters. Through the app, the user can provide quick reviews to city places using tags. This project was developed with HE:Labs team and i was responsible for creating the visual identity and implementing the front-end with HAML and SASS.",
 		"link": "opencompass",
 		"thumb": "images/projects/opencompass_thumb.jpg",
-		"gallery": ["images/projects/opencompass1.jpg", "images/projects/opencompass2.jpg", "", "", ""],
+		"gallery": ["images/projects/opencompass1.jpg", "images/projects/opencompass2.jpg"],
 		"year": "2015"
 	}, {
 		"name": "Brandstar",
@@ -162,7 +159,7 @@
 		"description": "BrandStar is an british platform that helps business owners to create their business strategies. This project was developed with HE:Labs team and i was responsible for creating the visual identity and implementing the front-end with HAML and SASS.",
 		"link": "brandstar",
 		"thumb": "images/projects/brandstar_thumb.jpg",
-		"gallery": ["images/projects/opencompass1.jpg", "images/projects/opencompass2.jpg", "", "", ""],
+		"gallery": ["images/projects/brandstar1.jpg"],
 		"external_link": "",
 		"year": "2015"
 	}, {
@@ -170,9 +167,9 @@
 		"category": "Games",
 		"description": "3D environment project rendering in real time in Unreal 4. Models created in Maya and textured in 3D Coat and Photoshop.",
 		"link": "alley",
-		"thumb": "images/projects/alley_final_thumb.jpg",
+		"thumb": "images/projects/alley_thumb.jpg",
 		"iframe": "https://www.youtube.com/embed/R56UaQlLteU?rel=0;color=white;showinfo=0",
-		"gallery": ["", "", "", "", ""],
+		"gallery": [],
 		"external_link": "",
 		"year": "2015"
 	}, {
@@ -183,15 +180,14 @@
 		"thumb": "images/projects/iccarj_thumb.jpg",
 		"gallery": ["images/projects/iccarj1.jpg", "images/projects/iccarj2.jpg", "images/projects/iccarj3.jpg", "images/projects/iccarj4.jpg", "images/projects/iccarj5.jpg"],
 		"external_link": "",
-		"year": "2015"
+		"year": "2013"
 	}, {
 		"name": "The Firefly",
 		"category": "3D",
 		"description": "Short animation project. Model created in Maya, textured in Zbrush",
 		"link": "firefly",
 		"thumb": "images/projects/firefly_thumb.jpg",
-		"gallery": ["", "", "", "", ""],
-
+		"gallery": [],
 		"iframe": "https://www.youtube.com/embed/VtFEbDgFYZg?rel=0;color=white;showinfo=0",
 		"external_link": "",
 		"year": "2015"
@@ -201,25 +197,25 @@
 		"description": "SouEsporte was project developed by MJV to help athletes to expose their work and skills in order to get sponsorships. I was responsible for the visual identity of the project, branding and photomanipulation of the ad pieces.",
 		"link": "souesporte",
 		"thumb": "images/projects/souesporte_thumb.jpg",
-		"gallery": ["images/projects/souesporte01.jpg", "images/projects/souesporte2.jpg", "images/projects/souesporte3.jpg", "", ""],
+		"gallery": ["images/projects/souesporte1.jpg", "images/projects/souesporte2.jpg", "images/projects/souesporte3.jpg"],
 		"external_link": "",
-		"year": "2015"
+		"year": "2011"
 	}, {
 		"name": "Storefront",
 		"description": "Graphic design project for storefront",
 		"category": "Design",
 		"link": "vitrine",
 		"thumb": "images/projects/vitrine_thumb.jpg",
-		"gallery": ["images/projects/vitrine.jpg", "", "", "", ""],
+		"gallery": ["images/projects/vitrine.jpg"],
 		"external_link": "",
-		"year": "2015"
+		"year": "2011"
 	}, {
 		"name": "Brazilian 2 Groove",
 		"category": "Design",
 		"description": "Brazilian Groove is band that makes Bossa Nova versions of pop songs. For their website, I created a very colorful color scheme that would reflect the cheerful video of Brazilian culture. Also, I designed a logo that would match the shapes of an acoustic guitar, a tambourine and the 'B' from Brazilian.",
 		"link": "brazilian",
 		"thumb": "images/projects/brazilian_thumb.jpg",
-		"gallery": ["images/projects/brazilian.jpg", "", "", "", ""],
+		"gallery": ["images/projects/brazilian.jpg"],
 		"external_link": "",
 		"year": "2015"
 	}, {
@@ -228,47 +224,36 @@
 		"description": "Terras is a Geology Company located in Rio de Janeiro. On this project, I created a new responsive layout for the website and created a wordpress theme for it, so the content could be easily updated by the client.",
 		"link": "terras",
 		"thumb": "images/projects/terras_thumb.jpg",
-		"gallery": ["images/projects/terras1.jpg", "images/projects/terras2.jpg", "images/projects/terras3.jpg", "", ""],
-
+		"gallery": ["images/projects/terras1.jpg", "images/projects/terras2.jpg", "images/projects/terras3.jpg"],
 		"external_link": "http://www.terrasgeologia.com.br",
 		"external_cta": "Visit the Website",
-		"year": "2015"
+		"year": "2014"
 	}, {
 		"name": "UNISUAM",
 		"category": "Frontend",
 		"description": "UNISUAM is a college in Rio that has more than 25 thousand students. On this project, I was responsible for creating the hotsite that students would use to apply online, with HTML, PHP, Jquery and CSS",
 		"link": "unisuam",
 		"thumb": "images/projects/unisuam_thumb.jpg",
-		"gallery": ["images/projects/unisuam1.jpg", "images/projects/unisuam2.jpg", "", "", ""],
+		"gallery": ["images/projects/unisuam1.jpg", "images/projects/unisuam2.jpg"],
 		"external_link": "",
-		"year": "2015"
+		"year": "2013"
 	}, {
 		"name": "LR Bens",
 		"category": "Design",
 		"description": "LR Bens is a Real State Company located in Rio de Janeiro. The website was developed using HTML, CSS and Jquery to create a fluid layout. I also created the Logo and the visual identity for the brand",
 		"link": "lrbens",
 		"thumb": "images/projects/lrbens_thumb.jpg",
-		"gallery": ["images/projects/lrbens1.jpg", "images/projects/lrbens2.jpg", "images/projects/lrbens3.jpg", "", ""],
+		"gallery": ["images/projects/lrbens1.jpg", "images/projects/lrbens2.jpg", "images/projects/lrbens3.jpg", "images/projects/lrbens4.jpg"],
 		"external_link": "",
-		"year": "2015"
+		"year": "2010"
 	}, {
 		"name": "Robot Concept",
 		"category": "Illustration",
 		"description": "Dgital painting on Photoshop",
 		"link": "robot",
 		"thumb": "images/projects/robot_concept_thumb.jpg",
-
 		"iframe": "https://www.youtube.com/embed/92I8R_E7Cyw?rel=0;color=white;showinfo=0",
-		"gallery": ["", "", "", "", ""],
-		"external_link": "",
-		"year": "2015"
-	}, {
-		"name": "Familia Auquimia",
-		"category": "Frontend",
-		"description": "Familia Auquimia is a brazilian NGO that fosters and take health care of abandoned animals. I volunteered to create an online software where the team could register the pets that could be adopted and it would be easy for people to find the perfect pet to become part of the family",
-		"link": "auquimia",
-		"thumb": "images/projects/auquimia_thumb.jpg",
-		"gallery": ["images/projects/auquimia_thumb.jpg", "images/projects/auquimia4.jpg", "images/projects/auquimia3.jpg", "images/projects/auquimia2.jpg", "images/projects/auquimia1.jpg"],
+		"gallery": ["images/projects/robot_head.jpg"],
 		"external_link": "",
 		"year": "2015"
 	}]
