@@ -6,6 +6,13 @@
     padding-left: 26px;
     text-decoration: none;
     width: 150px;
+    color: $light-blue;
+    margin-left: -26px;
+    margin-top: 25px;
+
+    &:hover {
+      color: lighten($light-blue, 10%);
+    }
   }
 
   &__description {
