@@ -8,7 +8,7 @@ var Project = React.createClass({
   getInitialState: function() {
     return {
       projects: [],
-      currentProject: this.props.params.project,
+      currentProject: {},
     }
   },
 
@@ -28,14 +28,29 @@ var Project = React.createClass({
   },
 
   render: function(){
-    console.log(this.state.currentProject[0].name)
-    return(
-    <div className={styles.main__internal}>
-      <h2>{this.state.currentProject[0].name}</h2>
-      <p>{this.state.currentProject[0].description}</p>
-      <Link to="/portfolio" className={styles.project__backLink}>Back to portfolio</Link>
-    </div>
-    )
+    if ( !this.state.currentProject[0] ) {
+     return <div>Loading</div>
+    }
+    else {
+      var projectImages = this.state.currentProject[0].gallery.map(function(image, index) {
+        return (
+          <img key={index} src={image} className={styles.project__image}/>
+        );
+      });
+
+      return(
+        <div className={styles.main__internal}>
+          <div className={styles.project__description}>
+            <h2>{this.state.currentProject[0].name}</h2>
+            <p>{this.state.currentProject[0].description}</p>
+            <Link to="/portfolio" className={styles.project__backLink}>Back to portfolio</Link>
+          </div>
+          <div className={styles.project__gallery}>
+            {projectImages}
+          </div>
+      </div>
+        )
+    }
   }
 });
 

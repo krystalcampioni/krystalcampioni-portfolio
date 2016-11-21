@@ -43,7 +43,7 @@ var Portfolio = React.createClass({
   },
 
   render: function(){
-    const projectCards = this.state.projects.map(function(project, index) {
+    let projectCards = this.state.projects.map(function(project, index) {
       return (
         <Link to={`projects/${project.link}`} key={project.link} className={styles.portfolio__item}>
         <ProjectCard

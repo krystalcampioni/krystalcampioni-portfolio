@@ -7,4 +7,19 @@
     text-decoration: none;
     width: 150px;
   }
+
+  &__description {
+    @include omega();
+    @include span-columns(4 of 12);
+  }
+
+  &__gallery {
+    @include omega();
+    @include span-columns(8 of 12);
+  }
+
+  &__image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
