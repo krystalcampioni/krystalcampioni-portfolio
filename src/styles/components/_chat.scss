@@ -16,6 +16,12 @@
     height: 135px;
     text-transform: none;
 
+    p:after {
+      content: "|";
+      opacity: 1;
+      animation: blink .5s linear infinite;
+    }
+
     span {
       float: left;
       width: 100%;

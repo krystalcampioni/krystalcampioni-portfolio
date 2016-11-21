@@ -13,7 +13,7 @@ var ChatBubble = React.createClass({
             <Typewriter
               speed={18}
               tag="p"
-              text={["work with front-end development", "like coding spaceships", "create awesome interfaces"]}
+              text={["work with frontend development", "work with web design","like coding spaceships"]}
               randomSpeed={true} />
 
         </h2>
