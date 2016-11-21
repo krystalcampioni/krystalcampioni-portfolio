@@ -42,14 +42,14 @@
   &__body {
     @include animation(reflection .8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95));
     @include size(140px 50px);
-    background: $red;
+    background: $pink;
     border-radius: 50% 20px 20px 50%;
     position: absolute;
     top: 100px;
     left: 90px;
     z-index: 20;
     border-right: 5px solid darken($metal, 20%);
-    box-shadow: inset 52px 8px 60px -25px $yellow, inset 13px -6px 22px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 52px 8px 60px -25px #ff5a00, inset 13px -6px 22px 2px rgba(0, 0, 0, 0.6);
   }
 
   &__nose {
@@ -78,7 +78,7 @@
       @include transform(scale(1.1, 2));
       @include size(100px 50px);
       content: '';
-      background: darken($red, 5%);
+      background: darken($pink, 5%);
       border-radius: 10px 50% 50% 10px;
       position: absolute;
       top: 0px;
@@ -99,7 +99,7 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-color: transparent transparent darken($red, 5%) transparent;
+      border-color: transparent transparent darken($pink, 25%) transparent;
       position: absolute;
 
       &:nth-of-type(1) {
@@ -107,7 +107,7 @@
       }
 
       &:nth-of-type(2) {
-        @include transform(scale(0.3, -0.15) rotate(157deg));
+        @include transform(scale(0.3, -0.15) rotate(157deg) translate(1px, -3px));
       }
     }
   }
@@ -120,7 +120,7 @@
       height: 0;
       border-style: solid;
       border-width: 0 30px 50px 0;
-      border-color: transparent transparent darken($red, 5%) transparent;
+      border-color: transparent transparent darken($pink, 25%) transparent;
       position: absolute;
 
       &:nth-of-type(1) {

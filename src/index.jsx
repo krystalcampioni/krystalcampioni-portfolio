@@ -4,6 +4,7 @@ import { AppContainer } from 'react-hot-loader';
 import App from './app.jsx';
 import Home from './components/Home.jsx';
 import Header from './components/Header.jsx';
+import About from './components/About.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Project from './components/Project.jsx';
 import Contact from './components/Contact.jsx';
@@ -14,6 +15,7 @@ render(
   <Router history={hashHistory}>
     <Route path="/" component={Header}>
       <Route path="/portfolio" component={Portfolio}/>
+      <Route path="/about" component={About}/>
       <Route path="/contact" component={Contact}/>
       <Route path="/projects/:project" component={Project}/>
       <IndexRoute component={Home} />

@@ -1,8 +1,13 @@
 import React from 'react';
 
+let typeTimeout;
+
 class Typewriter extends React.Component {
     constructor() {
         super();
+        this.state = {
+             text: ' ',
+         };
     }
 
     componentWillMount() {
@@ -15,11 +20,16 @@ class Typewriter extends React.Component {
         }
 
         this._originalString = this._originalString.split('').reverse();
-        this.setState({ text: ' ' });
+
     }
 
     componentDidMount() {
+        this.setState({ text: ' ' });
         this.type(this._originalString.pop());
+    }
+
+    componentWillUnmount() {
+      clearTimeout(typeTimeout);
     }
 
     type(char) {
@@ -29,7 +39,7 @@ class Typewriter extends React.Component {
 
         speed = randomSpeed ? this.randomizeSpeed(speed) : speed;
 
-        setTimeout(() => {
+        typeTimeout = setTimeout(() => {
             this.setState({
                 text: this.state.text + char
             });
