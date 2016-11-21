@@ -23,6 +23,8 @@
   &__gallery {
     @include omega();
     @include span-columns(8 of 12);
+
+    img { width: 100%; }
   }
 
   &__image {
