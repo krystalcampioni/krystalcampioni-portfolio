@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
 
+  &__filter {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    float: right;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
   &__name {
     display: block;
     font-size: rem(20);

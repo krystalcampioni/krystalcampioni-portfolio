@@ -58,10 +58,10 @@ var Portfolio = React.createClass({
     return(
     <div className={styles.main__internal}>
       <h2>Portfolio</h2>
-        <button className={styles.button__filter} onClick={this.showAll}> All </button>
-        <button className={styles.button__filter} onClick={() => this.filterBy('Frontend')}>Frontend</button>
-        <button className={styles.button__filter} onClick={() => this.filterBy('Games')}>Games and VR</button>
-        <button className={styles.button__filter} onClick={() => this.filterBy('Design')}>Design</button>
+        <button className={styles.portfolio__filter} onClick={this.showAll}> All </button>
+        <button className={styles.portfolio__filter} onClick={() => this.filterBy('Frontend')}>Frontend</button>
+        <button className={styles.portfolio__filter} onClick={() => this.filterBy('Games')}>Games and VR</button>
+        <button className={styles.portfolio__filter} onClick={() => this.filterBy('Design')}>Design</button>
         <FlipMove easing="ease-in-out">
           {projectCards}
         </FlipMove>
