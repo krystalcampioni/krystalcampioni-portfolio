@@ -12,10 +12,8 @@ var ProjectCard = React.createClass({
         <img src={`images/${this.props.thumb}`} className={styles.image} />
         <div className={styles.portfolio__description}>
            <div className={styles.portfolio__name}>{this.props.name}</div>
-           <ul className={styles.category__list}>
-            <li className={styles.category__list__item}>{this.props.category}</li>
-           </ul>
-           <div className={styles.button}>read more</div>
+           <div className={styles.portfolio__category}>{this.props.category}</div>
+           <div className={styles.portfolio__readMore}>read more</div>
          </div>
        </div>
     )

@@ -2,20 +2,50 @@
   margin: 0;
   padding: 0;
 
+  &__readMore {
+    @include transition(all .2s ease-in-out);
+    border: 1px solid $white;
+    padding: 5px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 12px;
+
+    &:hover {
+      background: $white;
+      color: $purple;
+    }
+  }
+
+  &__category {
+    padding-bottom: 10px;
+    font-weight: lighter;
+  }
+
   &__filter {
+    @include transition(all .2s ease-in-out);
     background: transparent;
-    color: white;
-    border: 1px solid white;
+    color: $white;
+    border: 1px solid $white;
     text-transform: uppercase;
     float: right;
     font-size: 13px;
     padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      background: $white;
+      color: $purple;
+    }
   }
 
   &__name {
     display: block;
-    font-size: rem(20);
-    margin-bottom: rem(10);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: .625rem;
+    text-transform: uppercase;
   }
 
   &__item {
@@ -40,7 +70,7 @@
   }
 
   &__imageWrapper {
-    @include background-image(linear-gradient(to right, rgba(#158DC6, 1), rgba(#B4EC51, 1)));
+    @include background-image(linear-gradient(to bottom, rgba($purple, 1), rgba($pink, 1)));
     height: 170px;
     overflow: hidden;
     position: relative;
@@ -70,7 +100,7 @@
 
     .portfolio__description {
     	@include transition(all .5s ease-in-out);
-      @include background-image(linear-gradient(to right, rgba(#158DC6, .85), rgba(#B4EC51, .85)));
+      @include background-image(linear-gradient(to right, rgba($purple, .85), rgba($pink, .85)));
     	height: 170px;
       bottom: -170px;
       color: #ffffff;
@@ -95,5 +125,4 @@
 
     }
   }
-
 }
