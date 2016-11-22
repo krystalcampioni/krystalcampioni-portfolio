@@ -1,6 +1,6 @@
 import React from 'react';
 
-let typeTimeout;
+var typeTimeout;
 
 class Typewriter extends React.Component {
     constructor() {

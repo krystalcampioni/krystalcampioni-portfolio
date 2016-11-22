@@ -6,7 +6,7 @@ import Rocket from './Rocket'
 var About = React.createClass({
   render: function(){
     return(
-      <div className={styles.rocket__wrapper}>
+      <div className={styles.main__internal}>
         <h2>About</h2>
       </div>
     )
