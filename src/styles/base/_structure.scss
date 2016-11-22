@@ -7,6 +7,15 @@ html {
   overflow-x: hidden;
 }
 
+hr {
+  @include linear-gradient( to right, $pink, $light-purple);
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+  height: 1px;
+  border: none;
+}
+
 a { text-decoration: none; }
 
 h2 {

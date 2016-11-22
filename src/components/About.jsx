@@ -31,6 +31,12 @@ var About = React.createClass({
             <div className={styles.about__text}>I created 3D models for Summit Tech Montréal, for a Virtual Reality project presented at the Mobile World Conference 2016 in Barcelona.</div>
             <Link to="/portfolio" className={styles.about__link}>Back to portfolio</Link>
           </div>
+
+          <hr />
+
+          <h2 className={styles.about__title}>Tech that I love</h2>
+
+
         </div>
     </div>
     )
