@@ -1,0 +1,62 @@
+.about {
+  &__link {
+    @include transition(all .8s ease);
+    display: inline-block;
+    padding-bottom: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 150px;
+    color: $light-blue;
+    border: 1px solid $light-purple;
+    margin-top: 20px;
+    width: 100%;
+
+    &:hover {
+      color: lighten($light-blue, 10%);
+      background: $light-purple;
+    }
+  }
+
+  &__bio {
+    @include span-columns(3 of 12);
+    text-align: center;
+
+    img { max-width: 170px; }
+  }
+
+  &__text {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__project {
+    margin-top: 10px;
+    float: left;
+    padding: 20px 0px;
+    width: calc(100%/3 - 30px);
+    margin: 15px;
+
+    img {
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__chat {
+    background: url('../images/r_line.svg') no-repeat scroll left top;
+    padding-top: 50px;
+    margin-top: -12px;
+  }
+
+  &__col {
+    @include span-columns(9 of 12);
+    text-align: center;
+    padding: 0;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}
