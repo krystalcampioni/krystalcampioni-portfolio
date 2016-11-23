@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from '../styles/main.scss';
-import imgPath from  '../images/krystal.png'
-import { Link } from 'react-router'
 
-//import images
+import { Link } from 'react-router'
+import Blog from './Blog'
+
+
+import imgPath from  '../images/krystal.png'
 import vr from  '../images/vr_thumb.jpg'
 import ms from  '../images/ms_thumb.jpg'
 import espn from  '../images/espn_thumb.jpg'
@@ -68,6 +70,9 @@ var About = React.createClass({
             <h3>French 🇫🇷</h3>
             If you’re patient, we can understand each other
           </div>
+
+          <hr />
+          <Blog />
         </div>
     </div>
     )
