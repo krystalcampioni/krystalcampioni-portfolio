@@ -3,21 +3,43 @@ import imgPath from  '../images/logo.svg'
 import styles from '../styles/main.scss';
 import { Link, IndexLink } from 'react-router';
 import Nav from './Nav';
+import classNames from 'classnames';
 
 var Header = React.createClass({
+
+  getInitialState: function() {
+    return {
+      hamburguer: null,
+    }
+  },
+
+  toggleMenu: function(){
+    this.setState({
+      hamburguer: !this.state.hamburguer
+    });
+  },
+
   render: function(){
+    const classes = classNames({
+      'hamburguer--is-open': this.state.hamburguer,
+      'hamburguer': true
+    });
+
+    const slidingClasses = classNames({
+      'hamburguer--is-open': this.state.hamburguer,
+      'menuMobile': true
+    });
+
     return(
       <div>
       <header className={styles.header}>
         <div className={styles.main}>
 
           <div className="entire-menu">
-            <input type="checkbox" id="change-hamburguer" />
-            <a className="hamburguer" href="#">
+            <button className={classes} onClick={this.toggleMenu}>
               <span></span>
-              <label htmlFor="change-hamburguer"></label>
-            </a>
-            <div className="menuMobile">
+            </button>
+            <div className={slidingClasses}>
               <Nav />
             </div>
           </div>

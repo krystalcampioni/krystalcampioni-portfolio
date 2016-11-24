@@ -12,23 +12,23 @@
 }
 
 .hamburguer {
-  width: 20px;
-  height: 20px;
-  position: relative;
+  width: 40px;
+  height: 30px;
   background: none;
   margin: 0 0 10px 0;
-  transform: scale(1.5 , 1.2);
   position: fixed;
   right: 20px;
-  top: 24px;
+  top: 20px;
   z-index: 9000;
+  outline: none;
+  border: 0;
 }
 
-.hamburguer:after, .hamburguer:before, .hamburguer span, .hamburguer label {
+.hamburguer:after, .hamburguer:before, .hamburguer span {
   content: ' ';
   display: block;
   width: 100%;
-  height: 4px;
+  height: 5px;
   background: #fff;
   left: 0;
   position: absolute;
@@ -44,38 +44,30 @@
 .hamburguer:focus {
   outline: none;
 }
-.hamburguer label {
-  width: 100%;
-  height: 100%;
-  background: none;
-  cursor: pointer;
-  z-index: 1000;
-}
+
 .hamburguer span {
-  top: 8px;
+  top: 13px;
 }
 
-#change-hamburguer {
-  display: none;
-}
-#change-hamburguer:checked ~ .hamburguer:before, #change-hamburguer:checked ~ .hamburguer:after {
+.hamburguer--is-open:before, .hamburguer--is-open:after {
   top: 10px;
-  margin-top: -10%;
+  margin-top: 0;
 }
-#change-hamburguer:checked ~ .hamburguer:before {
+.hamburguer--is-open:before {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-#change-hamburguer:checked ~ .hamburguer:after {
+.hamburguer--is-open:after {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-#change-hamburguer:checked ~ .hamburguer span {
+.hamburguer--is-open span {
   opacity: 0;
 }
-#change-hamburguer:checked ~ .menuMobile {
+
+.menuMobile.hamburguer--is-open {
   width: 200px;
 }
 
@@ -88,7 +80,7 @@
   background-image: -webkit-linear-gradient(109deg,rgba(254, 1, 240, 0.3), rgba(27, 36, 97, 0.7));
   background-image: -o-linear-gradient(109deg,rgba(254, 1, 240, 0.3), rgba(27, 36, 97, 0.7));
   background-image: linear-gradient(-19deg,rgba(254, 1, 240, 0.3), rgba(27, 36, 97, 0.7));
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 1);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   overflow: hidden;
