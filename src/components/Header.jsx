@@ -1,25 +1,50 @@
 import React from 'react';
 import imgPath from  '../images/logo.svg'
 import styles from '../styles/main.scss';
-import { Link, IndexLink } from 'react-router'
-
-const ACTIVE = { borderBottom: '8px solid #FE0170' }
+import { Link, IndexLink } from 'react-router';
+import Nav from './Nav';
+import classNames from 'classnames';
 
 var Header = React.createClass({
+
+  getInitialState: function() {
+    return {
+      hamburguer: null,
+    }
+  },
+
+  toggleMenu: function(){
+    this.setState({
+      hamburguer: !this.state.hamburguer
+    });
+  },
+
   render: function(){
+    const classes = classNames({
+      'hamburguer--is-open': this.state.hamburguer,
+      'hamburguer': true
+    });
+
+    const slidingClasses = classNames({
+      'hamburguer--is-open': this.state.hamburguer,
+      'menuMobile': true
+    });
+
     return(
       <div>
       <header className={styles.header}>
         <div className={styles.main}>
-          <Link to="/"><img src={imgPath} className={styles.header__logo} /></Link>
-            <nav className={styles.menu}>
-                <IndexLink activeStyle={ACTIVE} className={styles.menu__item} to="/">Home</IndexLink>
-                <Link  activeStyle={ACTIVE} className={styles.menu__item} to="/portfolio">Portfolio</Link>
-                <Link  activeStyle={ACTIVE} className={styles.menu__item} to="/about">About Me</Link>
-                <a className={styles.menu__item} href="https://br.linkedin.com/in/krystalcampioni/en" target="_blank">Resume</a>
-                <a className={styles.menu__item} href="https://medium.com/@krystalcampioni" target="_blank">Blog</a>
-                <Link  activeStyle={ACTIVE} className={styles.menu__item} to="/contact">Contact</Link>
-            </nav>
+
+          <button className={classes} onClick={this.toggleMenu}>
+            <span></span>
+          </button>
+          <div onClick={this.toggleMenu} className={slidingClasses}>
+            <Nav />
+          </div>
+
+          <IndexLink to="/"><img src={imgPath} className={styles.header__logo} /></IndexLink>
+
+          <nav className={styles.menuDesktop}><Nav /></nav>
         </div>
       </header>
       <div className={styles.rocket__wrapper}>
