@@ -35,15 +35,15 @@ var Header = React.createClass({
       <header className={styles.header}>
         <div className={styles.main}>
 
-          <div className="entire-menu">
-            <button className={classes} onClick={this.toggleMenu}>
-              <span></span>
-            </button>
-            <div className={slidingClasses}>
-              <Nav />
-            </div>
+          <button className={classes} onClick={this.toggleMenu}>
+            <span></span>
+          </button>
+          <div onClick={this.toggleMenu} className={slidingClasses}>
+            <Nav />
           </div>
+
           <IndexLink to="/"><img src={imgPath} className={styles.header__logo} /></IndexLink>
+
           <nav className={styles.menuDesktop}><Nav /></nav>
         </div>
       </header>

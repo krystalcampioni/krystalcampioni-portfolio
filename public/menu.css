@@ -1,14 +1,15 @@
-.entire-menuMobile {
-  position: absolute;
-  padding: 20px;
-  width: 100%;
-}
 @media screen and (min-width: 40em){
   .hamburguer { display: none; }
 }
 
 @media screen and (max-width: 40em){
   .hamburguer {  display: block; }
+}
+
+.entire-menuMobile {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
 }
 
 .hamburguer {
