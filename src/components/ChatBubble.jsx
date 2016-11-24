@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 var ChatBubble = React.createClass({
   render: function(){
     return(
-    <Link to="/about">
+    <Link to="/about" className={styles.chat__link}>
       <div className={styles.main}>
         <div className={styles.chat__wrapper}>
           <h2 className={styles.chat__text}>

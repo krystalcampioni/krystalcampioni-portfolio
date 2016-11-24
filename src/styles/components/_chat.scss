@@ -1,4 +1,15 @@
 .chat {
+  &__link {
+    @include media($tablet) {
+      background: rgba(25, 12, 70, 0.75);
+      float: left;
+      width: 100%;
+      height: 100vh;
+      z-index: 900;
+      position: relative;
+    }
+  }
+
   &__wrapper {
     display: block;
     float: left;
