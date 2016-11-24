@@ -11,6 +11,22 @@ var Header = React.createClass({
       <div>
       <header className={styles.header}>
         <div className={styles.main}>
+
+          <div className="entire-menu">
+            <input type="checkbox" id="change-hamburguer" />
+            <a className="hamburguer" href="#">
+              <span></span>
+              <label htmlFor="change-hamburguer"></label>
+            </a>
+            <div className="menu">
+              <a href="#">Item</a>
+              <a href="#">Item</a>
+              <a href="#">Item</a>
+              <a href="#">Item</a>
+              <a href="#">Item</a>
+              <p><a href="#">Item</a></p>
+            </div>
+          </div>
           <Link to="/"><img src={imgPath} className={styles.header__logo} /></Link>
             <nav className={styles.menu}>
                 <IndexLink activeStyle={ACTIVE} className={styles.menu__item} to="/">Home</IndexLink>
