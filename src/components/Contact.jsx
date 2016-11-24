@@ -6,7 +6,7 @@ var Contact = React.createClass({
   render: function(){
     return(
     <div className={styles.main__internal}>
-      <h3>Get in touch</h3>
+      <h2 className={styles.about__title}>Get in touch</h2>
       <h2 className={styles.social__email}><a href="mailto:hello@krystalcampioni.com">hello@krystalcampioni.com</a></h2>
       <ul className={styles.social}>
           <li><a href="https://www.linkedin.com/in/krystalcampioni" target="_blank"><img src="images/socialbox/linkedin.jpg" className={styles.social__image}/></a></li>

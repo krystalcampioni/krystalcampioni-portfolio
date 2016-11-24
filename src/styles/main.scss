@@ -27,3 +27,9 @@
     position: relative;
   }
 }
+
+.hideForDesktop {
+  @include media($medium-screen-up){
+    display: none;
+  }
+}

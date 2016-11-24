@@ -57,12 +57,13 @@ var Portfolio = React.createClass({
 
     return(
     <div className={styles.main__internal}>
-      <h2>Portfolio
+      <h2 className={styles.about__title}>Portfolio</h2>
+      <div className={styles.portfolio__filterWrapper}>
         <button className={styles.portfolio__filter} onClick={this.showAll}> All </button>
         <button className={styles.portfolio__filter} onClick={() => this.filterBy('Frontend')}>Frontend</button>
         <button className={styles.portfolio__filter} onClick={() => this.filterBy('Games')}>Games and VR</button>
         <button className={styles.portfolio__filter} onClick={() => this.filterBy('Design')}>Design</button>
-      </h2>
+      </div>
       <FlipMove easing="ease-in-out">
           {projectCards}
         </FlipMove>

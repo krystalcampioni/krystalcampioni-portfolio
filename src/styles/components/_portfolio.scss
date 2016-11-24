@@ -22,13 +22,20 @@
     font-weight: lighter;
   }
 
+  &__filterWrapper {
+      width: 100%;
+      margin: 15px;
+      float: left;
+      text-align: center;
+  }
+
   &__filter {
     @include transition(all .2s ease-in-out);
     background: transparent;
     color: $white;
     border: 1px solid $white;
     text-transform: uppercase;
-    float: right;
+    display: inline-block;
     font-size: 13px;
     padding: 5px 10px;
     outline: none;

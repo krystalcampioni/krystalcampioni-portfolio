@@ -35,7 +35,7 @@ var About = React.createClass({
             </div>
       </div>
         <div className={styles.about__col}>
-          <hr />
+          <hr className={styles.hideForDesktop}/>
           <h2 className={styles.about__title}>Project Highlights</h2>
           <div className={styles.about__project}>
             <img src={vr} />
