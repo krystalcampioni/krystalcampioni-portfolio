@@ -41,7 +41,9 @@
     outline: none;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       background: $white;
       color: $purple;
     }
