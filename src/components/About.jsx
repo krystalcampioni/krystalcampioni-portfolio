@@ -40,7 +40,7 @@ var About = React.createClass({
           <div className={styles.about__project}>
             <img src={vr} />
             <div className={styles.about__text}>I created 3D models for Summit Tech Montréal, for a Virtual Reality project presented at the Mobile World Conference 2016 in Barcelona.</div>
-            <Link to="/portfolio" className={styles.about__link}>Read about the project</Link>
+            <a href="http://www2.summit-tech.ca/vr/" className={styles.about__link} targer="_blank" >Read about the project</a>
           </div>
 
           <div className={styles.about__project}>
