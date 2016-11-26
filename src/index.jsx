@@ -25,15 +25,15 @@ render(
 );
 
 
-//  <AppContainer><Home/></AppContainer>
-// if (module.hot) {
-//   module.hot.accept('./app.jsx', () => {
-//     const App = require('./app.jsx').default;
-//     render(
-//       <AppContainer>
-//         <Home/>
-//       </AppContainer>,
-//       document.querySelector("#app")
-//     );
-//   });
-// }
+ <AppContainer><Home/></AppContainer>
+if (module.hot) {
+  module.hot.accept('./app.jsx', () => {
+    const App = require('./app.jsx').default;
+    render(
+      <AppContainer>
+        <Home/>
+      </AppContainer>,
+      document.querySelector("#app")
+    );
+  });
+}
