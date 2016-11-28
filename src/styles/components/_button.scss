@@ -1,0 +1,15 @@
+.button {
+  @include transition(all .5s ease);
+  border: 1px solid $light-purple;
+  clear: both;
+  color: $light-blue;
+  cursor: pointer;
+  float: left;
+  margin: 10px 0px 40px;
+  padding: 10px 15px;
+
+  &:hover {
+    background: $light-purple;
+    color: $white;
+  }
+}

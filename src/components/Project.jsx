@@ -38,15 +38,20 @@ var Project = React.createClass({
         );
       });
 
+      var projectIframe = this.state.currentProject[0].iframe ? <div className={styles.flexVideo}><iframe src={this.state.currentProject[0].iframe} /></div> : null;
+      var projectExternalLink = this.state.currentProject[0].external_link ? <a href={this.state.currentProject[0].external_link} className={styles.button}>{this.state.currentProject[0].external_cta}</a> : null;
+
       return(
         <div className={styles.main__internal}>
           <div className={styles.project__description}>
+            <Link to="/portfolio" className={styles.project__backLink}>Back to portfolio</Link>
             <h2>{this.state.currentProject[0].name}</h2>
             <p>{this.state.currentProject[0].description}</p>
-            <Link to="/portfolio" className={styles.project__backLink}>Back to portfolio</Link>
+            {projectExternalLink}
           </div>
           <div className={styles.project__gallery}>
             {projectImages}
+            {projectIframe}
           </div>
       </div>
         )

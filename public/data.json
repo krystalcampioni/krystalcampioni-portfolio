@@ -1,5 +1,25 @@
 {
 	"projects": [{
+		"name": "H&R Block",
+		"category": "Frontend",
+		"link": "hrblock",
+		"description": "In this project, developed by HE:labs for H&R Block, I was responsible for implementing the frontend using Slim, Javascript and Sass. We developed a web app that helps Brazilians make their income tax returns in a simpler, faster and safer way.",
+		"thumb": "images/projects/hrblock_thumb.jpg",
+		"gallery": ["images/projects/hrblock1.jpg","images/projects/hrblock2.jpg","images/projects/hrblock3.jpg"],
+		"external_link": "http://www.hrblock.com.br",
+		"external_cta": "Visit the website",
+		"year": "2015"
+	},{
+		"name": "NeoCambio",
+		"category": "Frontend",
+		"link": "neocambio",
+		"description": "NeoCambio is a pioneer online plataform that allows users to compare currency rates and buy foreign currencies for the best price. I had the amazing opportunity to join the team at the very beggining of this project, allowing me to create the design from scratcth, test the prototypes with users and work on the UX. I was also responsible for helping to choose the technology stack that was used ( Ruby on Rails and React ), and the team that would build it.",
+		"thumb": "images/projects/neocambio_thumb.jpg",
+		"gallery": ["images/projects/neocambio.jpg","images/projects/neocambio2.jpg"],
+		"external_link": "http://www.neocambio.com.br",
+		"external_cta": "Visit the website",
+		"year": "2015"
+	},{
 		"name": "Monster Crusher",
 		"category": "Games",
 		"link": "monster",
@@ -10,7 +30,6 @@
 		"external_cta": "Download on Google Play",
 		"year": "2015"
 	}, {
-
 		"name": "Run Senhora, Run",
 		"category": "Games",
 		"link": "senhora",
@@ -61,7 +80,6 @@
 		"gallery": ["images/projects/espn1.jpg", "images/projects/espn2.jpg"],
 		"external_link": "http://www.espnfc.com.br",
 		"external_cta": "Visit the website",
-
 		"year": "2013"
 	}, {
 		"name": "StartupBase",
@@ -71,6 +89,7 @@
 		"thumb": "images/projects/startupbase_thumb.jpg",
 		"gallery": ["images/projects/startupbase.jpg"],
 		"external_link": "http://www.abstartups.com.br/startupbase",
+ 		"external_cta": "Visit the website",
 		"year": "2015"
 	}, {
 		"name": "Magic",
@@ -253,7 +272,7 @@
 		"link": "robot",
 		"thumb": "images/projects/robot_concept_thumb.jpg",
 		"iframe": "https://www.youtube.com/embed/92I8R_E7Cyw?rel=0;color=white;showinfo=0",
-		"gallery": ["images/projects/robot_head.jpg"],
+		"gallery": [],
 		"external_link": "",
 		"year": "2015"
 	}]
