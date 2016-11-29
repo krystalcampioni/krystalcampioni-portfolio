@@ -11,7 +11,7 @@ var Nav = React.createClass({
         <IndexLink activeStyle={ACTIVE} className={styles.menu__item} to="/">Home</IndexLink>
         <Link  activeStyle={ACTIVE} className={styles.menu__item} to="/portfolio">Portfolio</Link>
         <Link  activeStyle={ACTIVE} className={styles.menu__item} to="/about">About Me</Link>
-        <a className={styles.menu__item} href="https://br.linkedin.com/in/krystalcampioni/en" target="_blank">Resume</a>
+        <Link  activeStyle={ACTIVE} className={styles.menu__item} to="/resume">Resume</Link>
         <a className={styles.menu__item} href="https://medium.com/@krystalcampioni" target="_blank">Blog</a>
         <Link  activeStyle={ACTIVE} className={styles.menu__item} to="/contact">Contact</Link>
       </div>

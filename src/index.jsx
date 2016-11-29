@@ -8,6 +8,7 @@ import About from './components/About.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Project from './components/Project.jsx';
 import Contact from './components/Contact.jsx';
+import Resume from './components/Resume.jsx';
 import './styles/main.scss';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
@@ -17,6 +18,7 @@ render(
       <Route path="/portfolio" component={Portfolio}/>
       <Route path="/about" component={About}/>
       <Route path="/contact" component={Contact}/>
+      <Route path="/resume" component={Resume}/>
       <Route path="/projects/:project" component={Project}/>
       <IndexRoute component={Home} />
     </Route>
