@@ -107,6 +107,8 @@
     border-bottom: 1px dashed rgba(203, 30, 233, 0.38);
     padding-bottom: 24px;
     text-align: center;
+
+    @media only print  { display: none; }
   }
 
   &__subtitle {

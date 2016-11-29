@@ -29,6 +29,11 @@
     z-index: 10;
     position: relative;
     padding: 0 30px;
+
+    @media only print  {
+      padding: 0;
+      margin: 10px;
+    }
   }
 }
 

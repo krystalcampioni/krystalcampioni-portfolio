@@ -1,6 +1,10 @@
 .resume {
+
   &__contact {
     font-size: 12px;
+    @media only print  {
+      color: black;
+    }
   }
 
   &__text {

@@ -5,6 +5,10 @@ html {
   font-family: 'Raleway', sans-serif;
   color: $white;
   overflow-x: hidden;
+  @media only print  {
+    color: lighten($black, 20%);
+    font-size: 12px;
+  }
 }
 
 iframe {
