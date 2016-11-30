@@ -1,13 +1,162 @@
 .resume {
 
+  &__bio {
+    @include span-columns(4 of 12);
+    text-align: center;
+    padding-right: 30px;
+
+    @include media($tablet) {
+      @include span-columns(12 of 12);
+    };
+
+    img { max-width: 170px; }
+  }
+
+  &__col {
+    @include span-columns(8 of 12);
+    text-align: center;
+    padding: 0;
+    @include media($tablet) {
+      @include span-columns(12 of 12);
+    };
+  }
+
+  &__languages {
+    text-align: left;
+
+    &_item {
+      float: left;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 15px;
+      width: 100%;
+      text-transform: uppercase;
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
+
+      span {
+        float: left;
+        font-size: 12px;
+        font-weight: lighter;
+        width: 100%;
+        text-transform: none;
+      }
+    }
+  }
+
+  &__section_title {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
   &__contact {
+    float: left;
     font-size: 12px;
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-align: left;
+    width: 100%;
+
+    &_icon {
+      fill: $blue;
+      width: 9px;
+      margin-right: 10px;
+    }
+
     @media only print  {
       color: black;
     }
   }
 
+  &__wrapper {
+    float: left;
+    width: 100%;
+  }
+
+  &__picture {
+    border-radius: 250px;
+    margin-top: 25px;
+    border: 10px solid rgba(255, 255, 255, 0.14);
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__headline {
+    text-transform: none;
+    font-size: 14px;
+  }
+
+  &__company {
+    border-left: 1px solid $blue;
+    color: rgba(236, 7, 247, .8);
+    float: left;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-left: 10px;
+    text-align: left;
+
+    @media only print  {
+      color: $black;
+      font-size: 12px;
+    }
+  }
+
+  &__degree {
+    color: $blue;
+    float: left;
+    width: 100%;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+    text-align: left;
+
+    @media only print  {
+      color: $black;
+      font-size: 12px;
+    }
+  }
+
+
+  &__position {
+    color: rgb(236, 7, 247);
+    float: left;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    text-align: left;
+    text-transform: uppercase;
+
+    @media only print  {
+      color: $black;
+      font-size: 12px;
+    }
+  }
+
   &__text {
     white-space: pre-wrap;
+    text-align: left;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+
+    @media only print  {
+      font-size: 12px;
+    }
+  }
+
+  &__date {
+    font-weight: lighter;
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: $light-blue;
+    margin: 10px 0 0 0;
+    padding: 0;
   }
 }

@@ -39,28 +39,6 @@
 			"startDate": {
 				"year": 2014
 			}
-		}, {
-			"degree": "Marketing e Propaganda",
-			"endDate": {
-				"year": 2013
-			},
-			"grade": {},
-			"id": 107014173,
-			"schoolName": "Universidade Veiga de Almeida",
-			"startDate": {
-				"year": 2011
-			}
-		}, {
-			"degree": "Artes Visuais",
-			"endDate": {
-				"year": 2009
-			},
-			"grade": {},
-			"id": 107014311,
-			"schoolName": "UERJ - Universidade do Estado do Rio de Janeiro",
-			"startDate": {
-				"year": 2006
-			}
 		}]
 	},
 	"emailAddress": "hello@krystalcampioni.com",
