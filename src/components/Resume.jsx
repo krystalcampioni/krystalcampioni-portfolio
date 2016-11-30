@@ -75,7 +75,12 @@ var Portfolio = React.createClass({
 
       return(
       <div className={styles.main__internal}>
-        <h2 className={styles.about__title}>Resume</h2>
+        <h2 className={styles.about__title}>Resume
+          <a href="javascript:window.print()" className={styles.resume__print}>
+            <svg className={styles.resume__print__icon}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 358V154c.3-.7.8-1.4 1-2.2C5.4 136.9 17.2 128 32.9 128h446.9c18.3 0 32.2 14 32.2 32.3v191.5c0 18.3-14 32.1-32.3 32.2H416v95c0 19.3-13.7 33-33 33H129c-19.4 0-33-13.6-33-33v-89.5-5.5H31.9c-13.8 0-25.5-8.4-30.1-21.4-.6-1.5-1.2-3.1-1.8-4.6zm383.8-69.7H128.4v191.4h255.4V288.3zm96.2-96.2c.1-17.3-14.3-31.9-31.6-32.1-17.5-.2-32.3 14.3-32.4 31.9-.1 17.3 14.3 31.9 31.6 32.2 17.4.2 32.3-14.5 32.4-32zM390 0c4.3 2 9 3.6 12.9 6.2 7.8 5.3 12.7 13.2 12.9 22.6.5 22.1.2 44.3.2 66.8h-31.9V32.2H128.2v63.4H96.3c-.1-1.6-.3-3.2-.3-4.8v-57c0-17.1 8.2-28 24.7-33 .5-.1.8-.5 1.2-.8H390z"/><path d="M160.2 351.6v-31.3h191.5v31.3H160.2zM319.8 384.4v31.3H160.3v-31.3h159.5z"/></svg>
+            Print this resume
+          </a>
+        </h2>
         <div className={styles.resume__bio}>
           <img className={styles.resume__picture} src={this.state.resume.pictureUrl} />
           <h1 className={styles.resume__title}>{this.state.resume.formattedName}</h1>

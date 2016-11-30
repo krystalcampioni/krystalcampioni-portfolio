@@ -71,6 +71,32 @@
     }
   }
 
+  &__print {
+    @include transition( all .5s ease );
+    float: right;
+    background: $pink;
+    display: inline-block;
+    position: absolute;
+    left: 14px;
+    color: $white;
+    font-size: 14px;
+    padding: 10px 11px;
+    top: -7px;
+
+    &:hover {
+      background: $light-purple
+    }
+
+    @include media($tablet) { display: none; }
+
+    &__icon {
+      fill: $white;
+      width: 16px;
+      margin-right: 10px;
+      float: left;
+    }
+  }
+
   &__contact {
     float: left;
     font-size: 12px;
