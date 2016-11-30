@@ -3,13 +3,16 @@
 		"_total": 3,
 		"values": [{
 			"id": 663706648,
-			"name": "Shaping Up with AngularJS"
+			"name": "Shaping Up with AngularJS",
+      "school": "CodeSchool"
 		}, {
 			"id": 98762955,
-			"name": "JavaScript Road Trip Part 1, 2 and 3"
+			"name": "JavaScript Road Trip Part 1, 2 and 3",
+      "school": "CodeSchool"
 		}, {
 			"id": 1589558558,
-			"name": "You, Me & SVG"
+			"name": "You, Me & SVG",
+      "school": "CodeSchool"
 		}]
 	},
 	"educations": {

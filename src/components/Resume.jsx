@@ -31,12 +31,6 @@ var Portfolio = React.createClass({
     else {
       console.log(this.state.resume)
 
-      let certifications = this.state.resume.certifications.values.map(function(certification) {
-        return (
-        <div key={certification.id} className={styles.resume__certification}>{certification.name}</div>
-        );
-      });
-
       let languages = this.state.resume.languages.values.map(function(language) {
         return (
         <div key={language.id} className={styles.resume__languages_item}>
@@ -70,6 +64,15 @@ var Portfolio = React.createClass({
         );
       });
 
+      let certifications = this.state.resume.certifications.values.map(function(certification) {
+        return (
+        <div key={certification.id} className={styles.resume__wrapper}>
+          <h4 className={styles.resume__position}>{certification.name}</h4>
+          <h4 className={styles.resume__degree}>{certification.school}</h4>
+        </div>
+        );
+      });
+
       return(
       <div className={styles.main__internal}>
         <h2 className={styles.about__title}>Resume</h2>
@@ -90,13 +93,15 @@ var Portfolio = React.createClass({
           <hr />
           <h1 className={styles.resume__section_title}>Education</h1>
           {educations}
+
+          <h1 className={styles.resume__section_title}>Certifications</h1>
+          {certifications}
+
         </div>
         <div className={styles.resume__col}>
           <h1 className={styles.resume__section_title}>Work Experience</h1>
           <hr />
           {positions}
-          <hr />
-          {certifications}
         </div>
       </div>
       )

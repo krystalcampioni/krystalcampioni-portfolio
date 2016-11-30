@@ -24,6 +24,13 @@
   &__languages {
     text-align: left;
 
+    @media only print {
+      text-align: left;
+      padding-top: 10px;
+      float: left;
+      width: 100%;
+    }
+
     &_item {
       float: left;
       font-size: 14px;
@@ -34,6 +41,10 @@
 
       &:last-child {
         margin-bottom: 40px;
+
+        @media only print {
+          margin-bottom: 15px;
+        }
       }
 
       span {
@@ -47,9 +58,17 @@
   }
 
   &__section_title {
-    text-align: left;
+    float: left;
+    font-size: 26px;
     margin-bottom: 10px;
     margin-top: 20px;
+    text-align: left;
+    width: 100%;
+
+    @media only print  {
+      margin-bottom: 0px;
+      margin-top: 10px;
+    }
   }
 
   &__contact {
@@ -67,7 +86,10 @@
     }
 
     @media only print  {
-      color: black;
+      color: $black;
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding: 0;
     }
   }
 
@@ -105,6 +127,7 @@
     @media only print  {
       color: $black;
       font-size: 12px;
+      margin-top: 5px;
     }
   }
 
@@ -135,6 +158,7 @@
     @media only print  {
       color: $black;
       font-size: 12px;
+      margin-top: 5px;
     }
   }
 
@@ -147,6 +171,7 @@
 
     @media only print  {
       font-size: 12px;
+      margin: 6px 0;
     }
   }
 
@@ -158,5 +183,11 @@
     color: $light-blue;
     margin: 10px 0 0 0;
     padding: 0;
+
+    @media only print  {
+      color: rgba($black, .4);
+      font-size: 12px;
+      margin: 5px 0;
+    }
   }
 }
