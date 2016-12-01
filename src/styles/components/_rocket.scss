@@ -9,6 +9,7 @@
 
   &__wrapper {
     @include linear-gradient(to top, darken($sky-blue, 15%), $sky-blue);
+    background-attachment: fixed;
     width: 100%;
     min-height: 100%;
     position: absolute;
