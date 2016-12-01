@@ -9,6 +9,7 @@
 
   &__wrapper {
     @include linear-gradient(to top, darken($sky-blue, 15%), $sky-blue);
+    background-attachment: fixed;
     width: 100%;
     min-height: 100%;
     position: absolute;
@@ -16,6 +17,8 @@
     left: 0;
     overflow: hidden;
     z-index: -10;
+
+    @media only print  { background: $white; }
   }
 
   &__windows {
@@ -306,6 +309,8 @@
   top: 0;
   left: 0;
   z-index: 0;
+
+  @media only print  { display: none; }
 
   @for $i from 1 through 200 {
     $counter: 50*$i;

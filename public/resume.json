@@ -1,0 +1,620 @@
+{
+	"certifications": {
+		"_total": 3,
+		"values": [{
+			"id": 663706648,
+			"name": "Shaping Up with AngularJS",
+      "school": "CodeSchool"
+		}, {
+			"id": 98762955,
+			"name": "JavaScript Road Trip Part 1, 2 and 3",
+      "school": "CodeSchool"
+		}, {
+			"id": 1589558558,
+			"name": "You, Me & SVG",
+      "school": "CodeSchool"
+		}]
+	},
+	"educations": {
+		"_total": 4,
+		"values": [{
+			"degree": "Nanodegree",
+			"endDate": {
+				"year": 2016
+			},
+			"fieldOfStudy": "Front-End Web Developer",
+			"grade": {},
+			"id": 380948650,
+			"notes": "Program built by Google, Github, AT&T, Hack Reactor and Udacity to teach the tools, principles, and patterns of front-end development.\n\nModules:\nIntroduction to Web Development\nJavaScript Basics\nObject-Oriented Javascript & HTML5 Canvas\nBrowser Rendering and Web Performance Optimization\nIntro to AJAX & JavaScript Design Patterns\nJavaScript Testing",
+			"schoolName": "Udacity",
+			"startDate": {
+				"year": 2016
+			}
+		}, {
+			"degree": "Diploma with Honours",
+			"endDate": {
+				"year": 2015
+			},
+			"fieldOfStudy": "Game Art & Design",
+			"grade": {},
+			"id": 243044897,
+			"schoolName": "Vancouver Institute of Media Arts (VanArts)",
+			"startDate": {
+				"year": 2014
+			}
+		}]
+	},
+	"emailAddress": "hello@krystalcampioni.com",
+	"formattedName": "Krystal Campioni",
+	"headline": "Experienced Front-end Developer and Designer at HE:labs",
+	"honorsAwards": {
+		"_total": 1,
+		"values": [{
+			"id": 1818070875,
+			"issuer": "https://codegirlcode.com/2016/05/15/10-women-killing-it-in-the-world-of-webdev-design/",
+			"name": "Mentioned as on of the '10 woman killing it on the world of web dev and design '​"
+		}]
+	},
+	"id": "IqewMe0hxH",
+	"languages": {
+		"_total": 3,
+		"values": [{
+			"id": 4,
+			"language": {
+				"name": "English",
+        "level": "Full professional proficiency"
+			}
+		}, {
+			"id": 1,
+			"language": {
+				"name": "Portuguese",
+        "level": "Native or bilingual proficiency"
+			}
+		}, {
+			"id": 3,
+			"language": {
+				"name": "French",
+        "level": "Elementary proficiency"
+			}
+		}]
+	},
+	"pictureUrl": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhjAAAAJGNmYmI3M2FjLWIyODEtNGE1YS1hYTExLWVlOThjODEyZjhkYw.jpg",
+	"positions": {
+		"_total": 8,
+		"values": [{
+			"company": {
+				"name": "KrystalCampioni.com"
+			},
+			"id": 663706647,
+			"isCurrent": true,
+			"location": {},
+			"startDate": {
+				"month": 11,
+				"year": 2009
+			},
+			"summary": "During these 8 years working as a freelancer, I had the opportunity to work on the design and development of projects for clients in Brazil, Canada and Europe. Here are some highlights:\n\n- 3D modeling for Summit Tech Montréal, on a Virtual Reality project presented at the Mobile World Conference 2016 in Barcelona. \nwww.summit-tech.ca/vr\n\n- Interface design and illustration for the game Monster Crusher, launched by Gamma Play studio in Europe. The game currently has more than 50,000 downloads and 4.4 (out of 5) stars in Google Play.\nwww.goo.gl/CD3a7r\n\n- Wordpress website development and creation of visual identity for small businesses. Examples in my portfolio:\nwww.krystalcampioni.com/#/portfolio\n",
+			"title": "Freelance Designer"
+		}, {
+			"company": {
+				"id": 2544225,
+				"industry": "Information Technology & Services",
+				"name": "HE:Labs",
+				"size": "51-200",
+				"type": "Privately Held"
+			},
+			"id": 394584528,
+			"isCurrent": true,
+			"location": {
+				"country": {
+					"code": "br",
+					"name": "Brazil"
+				},
+				"name": "Rio de Janeiro Area, Brazil"
+			},
+			"startDate": {
+				"month": 4,
+				"year": 2013
+			},
+			"summary": "HE:labs is a software development company focused on agile methodology. It has more than 70 employees working remotely around the world and has delivered more than 400 projects in its 6 year history. I was responsible for:\n\n- UI/UX Design and front-end implementation of the ESPN FC website for ESPN Brazil.\n- 3D modeling and animation for GE.\n- Redesigned the web app of EarlyShares, the pioneer american crowdfunding platform that\nallows users to invest in equity projects.\n- Front-end development for the brazilian HR Block website.\n- Design and front-end development for EduK, a e-learning platform that has more than 3 million students enrolled.\n- Data and user feedback analysis for UX improvements proposals.\n- Designer and Front-End developer in StartupDev MVP projects* \n- Writer and editor for the blog http://journal.helabs.com\n\n*StartupDev MVP is a team of HE:Labs that focuses on agile development for Startups, creating minimum viable products in only 2 days.\n\n\nwww.helabs.com/us/",
+			"title": "Front-end Developer and Designer"
+		}, {
+			"company": {
+				"id": 5314247,
+				"industry": "Computer Software",
+				"name": "Scope - Live Events Photo App",
+				"size": "11-50",
+				"type": "Privately Held"
+			},
+			"endDate": {
+				"month": 5,
+				"year": 2015
+			},
+			"id": 603258148,
+			"isCurrent": false,
+			"location": {
+				"country": {
+					"code": "ca",
+					"name": "Canada"
+				},
+				"name": "Vancouver, Canada Area"
+			},
+			"startDate": {
+				"month": 10,
+				"year": 2014
+			},
+			"summary": "Scope Photos is a startup from Vancouver, Canada. The company's main product is a IOs application that uses geolocation to gather all the photos posted on several social networks into an album for an event. For example, all the pictures posted publically on a particular show or ceremony.\n\n- My task was to design the application's web interface, allowing corporate customers to manage their photo albums more conveniently than in a smartphone. I created a responsive design for the web platform using Sketch and implemented it using AngularJS / SCSS\n\nwww.scopephotos.com\n",
+			"title": "Front-end Developer and Designer"
+		}, {
+			"company": {
+				"name": "Sonho Lúcido Comunicação ltda"
+			},
+			"endDate": {
+				"month": 2,
+				"year": 2014
+			},
+			"id": 394585722,
+			"isCurrent": false,
+			"location": {
+				"name": "Rio de Janeiro Area, Brazil"
+			},
+			"startDate": {
+				"month": 7,
+				"year": 2010
+			},
+			"summary": "Responsible for marketing campaigns, web products creation and team management using SCRUM.\nwww.sonholucido.com.br",
+			"title": "Art Director"
+		}, {
+			"company": {
+				"id": 83580,
+				"industry": "Management Consulting",
+				"name": "MJV",
+				"size": "201-500",
+				"type": "Privately Held"
+			},
+			"endDate": {
+				"month": 7,
+				"year": 2013
+			},
+			"id": 288675951,
+			"isCurrent": false,
+			"location": {
+				"country": {
+					"code": "br",
+					"name": "Brazil"
+				},
+				"name": "Rio de Janeiro Area, Brazil"
+			},
+			"startDate": {
+				"month": 5,
+				"year": 2012
+			},
+			"summary": "MJV is a multinational technology and innovation company with offices in Brazil, England and USA. Among its clients there are major companies as Coca-Cola, Claro and Bradesco. I was responsible for:\n\n- Design and implementation of responsive web applications\n- Data analysis, A / B testing and usability testing\n- Illustration, Design Thinking and Gamification.\n- Idealization of products through ethnographic research.\n\nwww.mjvinnovation.co.uk\n",
+			"title": "Front-end Developer and Designer"
+		}, {
+			"company": {
+				"id": 558402,
+				"industry": "Higher Education",
+				"name": "UNISUAM",
+				"size": "501-1000",
+				"type": "Educational"
+			},
+			"endDate": {
+				"month": 6,
+				"year": 2012
+			},
+			"id": 273957088,
+			"isCurrent": false,
+			"location": {
+				"name": "Rio de Janeiro Area, Brazil"
+			},
+			"startDate": {
+				"month": 9,
+				"year": 2011
+			},
+			"summary": "UNISUAM is a Brazilian university with more than 25,000 students. I was responsible for:\n\n- Data analysis, SEO and AdWords\n- Redesigning the website homepage to increase the conversion rate\n- Creating landing pages and hot sites in PHP, Joomla and Wordpress\n\nwww.unisuam.edu.br\n",
+			"title": "Web Designer"
+		}, {
+			"company": {
+				"id": 5264648,
+				"industry": "Furniture",
+				"name": "Mirage Móveis para Escritório",
+				"size": "51-200",
+				"type": "Partnership"
+			},
+			"endDate": {
+				"month": 9,
+				"year": 2011
+			},
+			"id": 273960966,
+			"isCurrent": false,
+			"location": {
+				"name": "Rio de Janeiro Area, Brazil"
+			},
+			"startDate": {
+				"month": 7,
+				"year": 2010
+			},
+			"summary": "Mirage is an office furniture factory that exists for 50 years and has proprietary 4 stores in Rio de Janeiro. I was hired as a marketing assistant and after only four months I was promoted to marketing manager. During my time as Marketing Manager and Assistant, I was responsible for:\n\n- Optimizing AdWords campaigns, increasing the company's revenues from internet by 380%\n- Design and implementation of a new website with drastic improvements in usability and SEO.\n- Management of ad campaigns for newspapers, magazines, billboards and ROI analysis.\n- Product photography and graphic design\n- Storefront design\n- Marketing team coordination as well as other sectors\n\nwww.miragenet.com.br",
+			"title": "Marketing Manager"
+		}, {
+			"company": {
+				"name": "Infolix Sistemas e Sites"
+			},
+			"endDate": {
+				"month": 2,
+				"year": 2010
+			},
+			"id": 273961220,
+			"isCurrent": false,
+			"location": {},
+			"startDate": {
+				"month": 9,
+				"year": 2009
+			},
+			"summary": "Infolix was a web development agency focused on small businesses in Rio de Janeiro. During my internship, I learnt about:\n- Product photography for e-commerce\n- Website development in PHP / HTML / Javascript / Flash\n- Interface Design\n",
+			"title": "Web Design Intern"
+		}]
+	},
+	"projects": {
+		"_total": 3,
+		"values": [{
+			"description": "O Sou Esporte foi criado para conectar e dar visibilidade aos atletas brasileiros. Criamos um site onde cada atleta será agente do próprio sucesso, divulgando sua história de vida e superação e atraindo visibilidade para si.",
+			"id": 7,
+			"name": "Sou Esporte",
+			"url": "http://www.souesporte.com.br"
+		}, {
+			"description": "O MeSegura é um spin-off criado em parceria entre a MJV Tecnologia & Inovação e a Baeta Corretora. É o único site brasileiro que realiza a cotação de seguros em várias seguradoras e corretores simultâneamente. Ao submeter um formulário, o consumidor recebe cotações por email e compara as melhores propostas enviadas diretamente pelos corretores. A proposta de valor do site é justamente essa, no MeSegura as chances de obter uma proposta de preço muito vantajosa é maior, pois uma mesma seguradora pode oferecer preços diferentes, de acordo com o corretor que apresentou a ficha.  ",
+			"id": 17,
+			"name": "MeSegura [beta]",
+			"url": "http://www.mesegura.com.br"
+		}, {
+			"id": 24,
+			"name": "SocialFly",
+			"url": "http://www.socialfly.com.br/"
+		}]
+	},
+	"publicProfileUrl": "https://www.linkedin.com/in/krystalcampioni",
+	"publications": {
+		"_total": 3,
+		"values": [{
+			"date": {
+				"day": 20,
+				"month": 7,
+				"year": 2016
+			},
+			"id": 1805110552,
+			"title": "Alien Invasions, SVGs and CSS Animations"
+		}, {
+			"date": {
+				"day": 27,
+				"month": 4,
+				"year": 2016
+			},
+			"id": 1805303205,
+			"title": "3D modeling for UI Designers"
+		}, {
+			"date": {
+				"day": 22,
+				"month": 1,
+				"year": 2016
+			},
+			"id": 1805414007,
+			"title": "Oiling the Color Wheel with Jade + Sass"
+		}]
+	},
+	"recommendationsReceived": {
+		"_total": 2,
+		"values": [{
+			"id": 36959571,
+			"recommendationText": "A Krystal tem uma postura excelente, é capaz de transitar em diferentes áreas de um projeto. Com um traço clean, seus trabalhos apresentam profissionalismo e objetividade. Trabalha bem em equipe, demonstra sua opinião de forma extremamente profissional e cumpre os prazos do projeto, mesmo que apertados.",
+			"recommendationType": {
+				"code": "colleague"
+			},
+			"recommender": {
+				"firstName": "Mariana",
+				"id": "jLwHoGiSK0",
+				"lastName": "Baptista"
+			}
+		}, {
+			"id": 502684163,
+			"recommendationText": "Krystal is a fantastic person and excellent designer. I just loved the time we worked together.",
+			"recommendationType": {
+				"code": "colleague"
+			},
+			"recommender": {
+				"firstName": "Francisco",
+				"id": "4QRNtK_yum",
+				"lastName": "Martins"
+			}
+		}]
+	},
+	"skills": {
+		"_total": 50,
+		"values": [{
+			"id": 1,
+			"skill": {
+				"name": "Graphic Design"
+			}
+		}, {
+			"id": 2,
+			"skill": {
+				"name": "User Experience"
+			}
+		}, {
+			"id": 3,
+			"skill": {
+				"name": "Logo Design"
+			}
+		}, {
+			"id": 4,
+			"skill": {
+				"name": "Web Design"
+			}
+		}, {
+			"id": 5,
+			"skill": {
+				"name": "User Interface Design"
+			}
+		}, {
+			"id": 6,
+			"skill": {
+				"name": "HTML 5"
+			}
+		}, {
+			"id": 7,
+			"skill": {
+				"name": "CSS"
+			}
+		}, {
+			"id": 8,
+			"skill": {
+				"name": "Design Thinking"
+			}
+		}, {
+			"id": 9,
+			"skill": {
+				"name": "Usability"
+			}
+		}, {
+			"id": 10,
+			"skill": {
+				"name": "3D Modeling"
+			}
+		}, {
+			"id": 11,
+			"skill": {
+				"name": "HAML"
+			}
+		}, {
+			"id": 12,
+			"skill": {
+				"name": "Maya"
+			}
+		}, {
+			"id": 13,
+			"skill": {
+				"name": "ZBrush"
+			}
+		}, {
+			"id": 14,
+			"skill": {
+				"name": "Environment Art"
+			}
+		}, {
+			"id": 15,
+			"skill": {
+				"name": "Front-end"
+			}
+		}, {
+			"id": 16,
+			"skill": {
+				"name": "Unreal Engine"
+			}
+		}, {
+			"id": 17,
+			"skill": {
+				"name": "jQuery"
+			}
+		}, {
+			"id": 18,
+			"skill": {
+				"name": "Mobile Design"
+			}
+		}, {
+			"id": 19,
+			"skill": {
+				"name": "WordPress"
+			}
+		}, {
+			"id": 20,
+			"skill": {
+				"name": "Joomla"
+			}
+		}, {
+			"id": 21,
+			"skill": {
+				"name": "Agile Web Development"
+			}
+		}, {
+			"id": 22,
+			"skill": {
+				"name": "A/B testing"
+			}
+		}, {
+			"id": 23,
+			"skill": {
+				"name": "Google Analytics"
+			}
+		}, {
+			"id": 24,
+			"skill": {
+				"name": "Google Adwords"
+			}
+		}, {
+			"id": 25,
+			"skill": {
+				"name": "Github"
+			}
+		}, {
+			"id": 26,
+			"skill": {
+				"name": "Interaction Design"
+			}
+		}, {
+			"id": 27,
+			"skill": {
+				"name": "HTML5"
+			}
+		}, {
+			"id": 28,
+			"skill": {
+				"name": "Social Media"
+			}
+		}, {
+			"id": 29,
+			"skill": {
+				"name": "3D Coat"
+			}
+		}, {
+			"id": 30,
+			"skill": {
+				"name": "Texture Painting"
+			}
+		}, {
+			"id": 31,
+			"skill": {
+				"name": "Texturing"
+			}
+		}, {
+			"id": 32,
+			"skill": {
+				"name": "User Experience Design"
+			}
+		}, {
+			"id": 33,
+			"skill": {
+				"name": "Unity3D"
+			}
+		}, {
+			"id": 34,
+			"skill": {
+				"name": "Agile Methodologies"
+			}
+		}, {
+			"id": 35,
+			"skill": {
+				"name": "AngularJS"
+			}
+		}, {
+			"id": 69,
+			"skill": {
+				"name": "Scrum"
+			}
+		}, {
+			"id": 70,
+			"skill": {
+				"name": "Git"
+			}
+		}, {
+			"id": 71,
+			"skill": {
+				"name": "Sketch"
+			}
+		}, {
+			"id": 74,
+			"skill": {
+				"name": "Photoshop"
+			}
+		}, {
+			"id": 75,
+			"skill": {
+				"name": "Adobe Creative Suite"
+			}
+		}, {
+			"id": 77,
+			"skill": {
+				"name": "Illustrator"
+			}
+		}, {
+			"id": 78,
+			"skill": {
+				"name": "Art Direction"
+			}
+		}, {
+			"id": 79,
+			"skill": {
+				"name": "Cascading Style Sheets (CSS)"
+			}
+		}, {
+			"id": 80,
+			"skill": {
+				"name": "Adobe Photoshop"
+			}
+		}, {
+			"id": 92,
+			"skill": {
+				"name": "Grunt"
+			}
+		}, {
+			"id": 93,
+			"skill": {
+				"name": "GruntJS"
+			}
+		}, {
+			"id": 94,
+			"skill": {
+				"name": "Gulp.js"
+			}
+		}, {
+			"id": 95,
+			"skill": {
+				"name": "KnockoutJS"
+			}
+		}, {
+			"id": 96,
+			"skill": {
+				"name": "React.js"
+			}
+		}, {
+			"id": 36,
+			"skill": {
+				"name": "Adobe Illustrator"
+			}
+		}]
+	},
+	"summary": "- Front-end Developer and Designer with more than 8 years of experience working with web and mobile applications.\n- Expert in Agile software development.\n- Extensive experience with React, Ruby on Rails, PHP, AngularJS, NodeJS.\n- Advanced knowledge of HTML / Haml / Slim / Jade (Pug) and CSS / SCSS (BEM)\n- Advanced knowledge of 3D modeling, experience in game projects, virtual reality and complex interface animations.\n- UI Design with Sketch / Zeplin and Adobe package.\n- Git version control.\n- Experience with team leadership.\n- Fluent in English, intermediate French.\n",
+	"volunteer": {
+		"causes": {
+			"_total": 7,
+			"values": [{
+				"name": "animalRights"
+			}, {
+				"name": "artsAndCulture"
+			}, {
+				"name": "civilRights"
+			}, {
+				"name": "environment"
+			}, {
+				"name": "health"
+			}, {
+				"name": "humanitarianRelief"
+			}, {
+				"name": "scienceAndTechnology"
+			}]
+		},
+		"opportunities": {
+			"boardMember": true,
+			"proBono": true
+		},
+		"volunteerExperiences": {
+			"_total": 1,
+			"values": [{
+				"id": 85,
+				"organization": {
+					"name": "Auquimia NGO"
+				},
+				"role": "Volunteer Designer"
+			}]
+		}
+	}
+}
